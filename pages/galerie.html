@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../images/hobby4.png" type="image/x-icon">
+    <title>Galerie</title>
+</head>
+
+<body>
+    <header>
+        <a href="../index.html"> <img src="../images/hobby4.png" alt="Icon" class="nav-icon"></a>
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+            <div id="nav-links">
+                <a href="../index.html">Acasă</a>
+                <a href="beneficii.html">Beneficii</a>
+                <a href="tutoriale.html">Tutoriale</a>
+                <a href="galerie.html">Galerie</a>
+                <a href="contacte.html">Contacte</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="center-title">Galerie</h1>
+        <section class="galerie-section">
+
+            <div class="gallery-container">
+                <img src="../images/game.jpg" alt="Hobby 1">
+                <img src="../images/sport.jpg" alt="Hobby 2">
+                <img src="../images/muzica.jpg" alt="Hobby 3">
+                <img src="../images/foto.jpg" alt="Hobby 4">
+                <img src="../images/gatit.jpg" alt="Hobby 5">
+                <img src="../images/desen.jpg" alt="Hobby 6">
+                <img src="../images/vlogging.jpg" alt="Hobby 7">
+                <img src="../images/carte.jpg" alt="Hobby 6">
+                <img src="../images/voluntar.jpg" alt="Hobby 7">
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; Clubul tău de Hobby 2024
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('menu-open');
+        }
+    </script>
+</body>
+
+</html>

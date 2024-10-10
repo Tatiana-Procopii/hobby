@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/hobby4.png" type="image/x-icon">
+    <title>Acasă</title>
+</head>
+
+<body>
+    <header>
+      <a href="index.html"> <img src="images/hobby4.png" alt="Icon" class="nav-icon"></a> 
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+            <div id="nav-links">
+                <a href="index.html">Acasă</a>
+                <a href="pages/beneficii.html">Beneficii</a>
+                <a href="pages/tutoriale.html">Tutoriale</a>
+                <a href="pages/galerie.html">Galerie</a>
+                <a href="pages/contacte.html">Contacte</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="center-title">Bine ați venit!</h1>
+        <section class="index-section overlay">
+
+            <div class="text-container">
+
+                <p> Hobby-urile pot aduce bucurie și satisfacție în viața noastră. <br> Inspiră-te și explorează noi
+                    pasiuni!
+                    Dezvoltăți abilitățile! <br>
+                    Învăță să transformi timpul liber în activități pline de sens!</p>
+
+                <!-- Buton Descoperă -->
+                <div class="button-container">
+                    <a href="pages/beneficii.html" class="btn-descopera">Descoperă</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        &copy; Clubul tău de Hobby 2024
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('menu-open');
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ro">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contacte</title>
+    <link rel="shortcut icon" href="../images/hobby4.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+    <header>
+        <a href="../index.html"> <img src="../images/hobby4.png" alt="Icon" class="nav-icon"></a>
+        <nav>
+            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+            <div id="nav-links">
+                <a href="../index.html">Acasă</a>
+                <a href="beneficii.html">Beneficii</a>
+                <a href="tutoriale.html">Tutoriale</a>
+                <a href="galerie.html">Galerie</a>
+                <a href="contacte.html">Contacte</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="center-title">Contacte</h1>
+        <section id="form-section" class="contact-form-section">
+            <div class="row">
+                <!-- Col 50 pentru Contacte și Hartă -->
+                <div class="col-50 contact-details">
+                    
+                    <h2 class="center-title">Aici suntem noi</h2>
+
+                    <p><i class="fa fa-map-marker"></i><b>Adresa: </b> Str. Libertății 12, Chișinău</p>
+                    <p><i class="fa fa-phone"></i><b>Telefon: </b> <a href="tel:+373123456789">(+373) 123 456 789</a>
+                    </p>
+                    <p><i class="fa fa-envelope"></i> <b>Email: </b><a href="mailto:info@hobbyclub.md">
+                            info@hobbyclub.md</a></p>
+                    <p><i class="fa fa-globe"></i> <b> Site: </b><a href="http://www.hobbyclub.md" target="_blank">
+                            www.hobbyclub.md</a></p>
+
+                    <!-- Iframe pentru harta -->
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27127.819827584983!2d28.849831293343738!3d47.010449004927225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40c982a1b833edb9%3A0x400b99e3a1f2cbd4!2sChi%C8%99in%C4%83u!5e0!3m2!1sen!2smd!4v1696877920747!5m2!1sen!2smd"
+                        style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+                <!-- Col 50 pentru Formular -->
+                <div class="col-50 hobby-form">
+                    <form id="hobby-form">
+                        <h2>Înregistrare în Clubul de Hobby</h2>
+                        <div class="form-group">
+
+                            <input type="text" id="name" name="name" placeholder="Introduceți numele" required>
+                      
+
+                        
+
+                            <input type="text" id="address" name="address" placeholder="Introduceți adresa" required>
+                       
+
+                        
+
+                            <input type="email" id="email" name="email" placeholder="Introduceți emailul" required>
+                       
+
+                        
+
+                            <input type="tel" id="phone" name="phone" placeholder="Introduceți numărul de telefon"
+                                required>
+                       
+
+
+                        
+
+                            <select id="age" name="age" required>
+                                <option value="" disabled selected>Selectați vârsta</option>
+                                <script>
+                                    for (let i = 8; i <= 40; i++) {
+                                        document.write('<option value="' + i + '">' + i + '</option>');
+                                    }
+                                </script>
+                            </select>
+                       
+
+                        
+
+                            <select id="hobby" name="hobby" required>
+                                <option value="" disabled selected>Selectați un hobby</option>
+                                <option value="Fotografie">Fotografie</option>
+                                <option value="Pictură">Pictură</option>
+                                <option value="Muzică">Muzică</option>
+                                <option value="Gătit">Gătit</option>
+                                <option value="Sport">Sport</option>
+                                <option value="Jocuri Video">Jocuri Video</option>
+                                <option value="Modelism">Vlogging</option>
+                            </select>
+                       
+
+                        
+
+                            <select id="club" name="club" required>
+                                <option value="" disabled selected>Selectați un club</option>
+                                <option value="Clubul Artelor">Clubul Artelor</option>
+                                <option value="Clubul Sportivilor">Clubul Sportivilor</option>
+                                <option value="Clubul Tehnic">Clubul Tehnic</option>
+                                <option value="Clubul Muzical">Clubul Muzical</option>
+                            </select>
+                       
+
+                        
+
+                            <textarea id="message" name="message" placeholder="Introduceți mesajul" rows="4"></textarea>
+                       
+
+                        
+                            <label>
+                                <input type="checkbox" id="terms" required name=""> 
+                                Accept condițiile de înregistrare și
+                                prelucrarea datelor 
+                            </label>
+
+                            <button type="submit" id="submit-btn">Trimite</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+
+
+    </main>
+
+    <footer>
+        &copy; Clubul tău de Hobby 2024
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('menu-open');
+        }
+    </script>
+</body>
+
+</html>
