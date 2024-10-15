@@ -415,6 +415,11 @@ textarea {
 
 
 /* Stiluri pentru ecrane mici */
+@media (max-width: 1200px){
+    main {
+        width: 100%;
+    }
+}
 @media (max-width: 768px) {
 
     main {
