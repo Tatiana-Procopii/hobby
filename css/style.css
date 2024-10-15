@@ -55,6 +55,7 @@ header {
     /* Dimensiune mai mare pentru vizibilitate */
     cursor: pointer;
     /* Cursor pointer pentru interactivitate */
+    color: #fff;
 }
 
 /* Meniul de navigare */
@@ -65,7 +66,7 @@ header {
     /* Link-uri pe orizontală */
     position: relative;
     /* Poziționare relativă pentru link-uri */
-    z-index: 1;
+    z-index: 2;
     /* Asigură că meniul este deasupra altor elemente */
 }
 
@@ -114,7 +115,7 @@ header {
 /* Container pentru text */
 .text-container {
     position: relative;
-    z-index: 2; /* Asigură că textul este deasupra efectului de sticlă */
+    z-index: 1; /* Asigură că textul este deasupra efectului de sticlă */
     max-width: 100dvh;
     margin: 0 auto;
     padding: 20px; /* Margine pentru text */
