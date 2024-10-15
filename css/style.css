@@ -172,6 +172,7 @@ main {
     flex-grow: 1;
     /* Face secțiunea main să se extindă pentru a ocupa tot spațiul disponibil */
     padding: 20px;
+    overflow: auto;
 
 }
 
@@ -427,6 +428,7 @@ textarea {
         width: 100%;
 
     }
+    
 
     .hamburger {
         display: block;
@@ -460,6 +462,7 @@ textarea {
     #nav-links a {
         border-bottom: 1px solid transparent;
         /* Separator pentru link-uri */
+        text-align:center ;
     }
 
     .nav-icon {
