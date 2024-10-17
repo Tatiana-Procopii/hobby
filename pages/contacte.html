@@ -10,7 +10,8 @@
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="../js/main.js" defer></script>
 </head>
 
 <body>
@@ -34,7 +35,7 @@
             <div class="row">
                 <!-- Col 50 pentru Contacte și Hartă -->
                 <div class="col-50 contact-details">
-                    
+
                     <h2 class="center-title">Aici suntem noi</h2>
 
                     <p><i class="fa fa-map-marker"></i><b>Adresa: </b> Str. Libertății 12, Chișinău</p>
@@ -58,39 +59,16 @@
                         <div class="form-group">
 
                             <input type="text" id="name" name="name" placeholder="Introduceți numele" required>
-                      
-
-                        
-
                             <input type="text" id="address" name="address" placeholder="Introduceți adresa" required>
-                       
-
-                        
-
                             <input type="email" id="email" name="email" placeholder="Introduceți emailul" required>
-                       
-
-                        
-
                             <input type="tel" id="phone" name="phone" placeholder="Introduceți numărul de telefon"
                                 required>
-                       
-
-
-                        
-
                             <select id="age" name="age" required>
                                 <option value="" disabled selected>Selectați vârsta</option>
-                                <script>
-                                    for (let i = 8; i <= 40; i++) {
-                                        document.write('<option value="' + i + '">' + i + '</option>');
-                                    }
-                                </script>
+<script> for (let i = 8; i <= 40; i++) {
+    document.write('<option value="' + i + '">' + i + '</option>');
+}</script>
                             </select>
-                       
-
-                        
-
                             <select id="hobby" name="hobby" required>
                                 <option value="" disabled selected>Selectați un hobby</option>
                                 <option value="Fotografie">Fotografie</option>
@@ -101,10 +79,6 @@
                                 <option value="Jocuri Video">Jocuri Video</option>
                                 <option value="Modelism">Vlogging</option>
                             </select>
-                       
-
-                        
-
                             <select id="club" name="club" required>
                                 <option value="" disabled selected>Selectați un club</option>
                                 <option value="Clubul Artelor">Clubul Artelor</option>
@@ -112,18 +86,13 @@
                                 <option value="Clubul Tehnic">Clubul Tehnic</option>
                                 <option value="Clubul Muzical">Clubul Muzical</option>
                             </select>
-                       
-
-                        
 
                             <textarea id="message" name="message" placeholder="Introduceți mesajul" rows="4"></textarea>
-                       
 
-                        
                             <label>
-                                <input type="checkbox" id="terms" required name=""> 
+                                <input type="checkbox" id="terms" required name="">
                                 Accept condițiile de înregistrare și
-                                prelucrarea datelor 
+                                prelucrarea datelor
                             </label>
 
                             <button type="submit" id="submit-btn">Trimite</button>
