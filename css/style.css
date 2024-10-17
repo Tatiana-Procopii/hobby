@@ -26,6 +26,7 @@ body {
 
 /* Header și nav */
 header {
+    width: 100%;
     background-color: #333;
     /* Fundal închis pentru header */
     color: white;
@@ -38,6 +39,8 @@ header {
     /* Spațiu între iconiță și link-uri */
     align-items: center;
     /* Aliniere verticală */
+    position: fixed;
+    z-index: 3;
 }
 
 .nav-icon {
@@ -46,6 +49,8 @@ header {
     height: auto;
     /* Măsura automată */
     margin-left: 50px;
+    z-index: 3;
+    position: relative;
 }
 
 .hamburger {
@@ -155,14 +160,15 @@ header {
 }
 
 
-
 /* Pagini */
 main {
-    width: 200dvh;
-    /* Asigură că secțiunea nu depășește o lățime maximă pe ecrane mari */
+    height: 100dvh;
+    /* Asigură că secțiunea nu depășește o înălțime maximă pe ecrane mari */
     margin: 0 auto;
     /* Centrarea secțiunii pe orizontală */
-    padding: 20px;
+    padding: 20px 20px 20px;
+
+    padding-top: 100px !important;
     /* Un spațiu interior confortabil */
     background-color: #f9f9f9;
     /* Fundal pentru secțiunea main */
@@ -256,7 +262,6 @@ section {
 .tutorial h2 {
     text-align: center;
 }
-
 
 .beneficii-section,
 .tutoriale-section,
@@ -381,8 +386,6 @@ form h2 {
     margin-bottom: 15px;
 }
 
-
-
 .form-group input, .form-group select, .form-group textarea {
     width: 100%;
     margin-bottom: 20px;
@@ -412,8 +415,6 @@ textarea {
 }
 
 
-
-
 /* Stiluri pentru ecrane mici */
 @media (max-width: 1200px){
     main {
@@ -434,7 +435,6 @@ textarea {
 
     }
     
-
     .hamburger {
         display: block;
         /* Afișează hamburger pe ecrane mici */
