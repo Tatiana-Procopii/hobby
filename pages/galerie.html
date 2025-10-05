@@ -1,56 +1,2112 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" href="../images/hobby4.png" type="image/x-icon">
-    <title>Galerie</title>
+    <title>LT "Miron Costin" Noutati</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Liecul Teoretic Miron Costin Floresti">
+    <meta name="keywords"
+        content="Liceul Miron Costin, miron costin, miron costin floresti, profesori buni, elevi dotati, cei mai buni profesori din, liceu dotat, performante, floresti liceu, Miron Costin">
+    <meta name="author" content="Procopii Tatiana">
+    <meta property="og:title" content="https://mironcostin.md/" />
+    <meta property="og:description" content="Liceul Teoretic Miron Costin Floresti, Instituția și-a început activitatea în anul 1974
+    cu statut de școală rusă moldovenească, iar în 2006 a fost reorganizat în Liceu Teoretic cu predare în
+    limba română, instituție care cuprinde două trepte de învățământ secundar: învățământ gimnazial,
+    clasele a V-a și a IX-a, elevi de vârstă cuprinsă între 10-11 și 15-16 ani și învățământ liceal,
+    clasle X-XII, elevi de vârsta 15-16 și 17-18 ani.
+    The public institution Theoretical High School Miron Costin, Florești is a non-profit state secondary
+     education institution. The institution started its activity in 1974 with the status of a General
+    School, and in 2006 it was reorganized in a theoretical high school comprising two stages of
+    secondary education: secondary education, 5th and 9th grades, pupils aged 10-11 and 15-16 years and
+    high school education, classes X-XII, pupils aged 15-16 and 17-18 years." />
+    <meta property="og:image" content="file:///C:/Users/user/Pictures/Desktop/ProcopiiTatiana/images/logoDichii.png" />
+    <link rel="icon" href="../images/logoDichii.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/lightbox.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/lightbox.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
+
 </head>
 
 <body>
-    <header>
-        <a href="../index.html"> <img src="../images/hobby4.png" alt="Icon" class="nav-icon"></a>
-        <nav>
-            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
-            <div id="nav-links">
-                <a href="../index.html">Acasă</a>
-                <a href="beneficii.html">Beneficii</a>
-                <a href="tutoriale.html">Tutoriale</a>
-                <a href="galerie.html">Galerie</a>
-                <a href="contacte.html">Contacte</a>
-            </div>
-        </nav>
-    </header>
+    <div id="menu-btn" onclick="menu()">
+        <i id="hamburger" class="fas fa-bars"></i>
+        <i id="close" class="fas fa-times hidden"></i>
+    </div>
 
-    <main>
-        <h1 class="center-title">Galerie</h1>
-        <section class="galerie-section">
+    <navbar id="side-menu">
+        <div id="menu-logo">
+            <i class="fas fa-graduation-cap"></i>
+        </div>
+        <a href="../index.html#despre" onclick="menu()">Despre noi</a>
+        <a href="../index.html#orar" onclick="menu()">Orar</a>
+        <a href="noutati.html" onclick="menu()">Noutăți</a>
+        <a href="acte.html" onclick="menu()">Acte normative</a>
+        <a href="transparenta.html" onclick="menu()">Transparența decizională</a>
+        <a href="../index.html#merite" onclick="menu()">Merite</a>
+        <a href="galerie.html" onclick="menu()">Galerie</a>
+        <a href="../index.html#contacte" onclick="menu()">Contacte</a>
+        <!-- <a href="formular.html" onclick="menu()">Formular pentru Absolvenți</a> -->
 
-            <div class="gallery-container">
-                <img src="../images/game.jpg" alt="Hobby 1">
-                <img src="../images/sport.jpg" alt="Hobby 2">
-                <img src="../images/muzica.jpg" alt="Hobby 3">
-                <img src="../images/foto.jpg" alt="Hobby 4">
-                <img src="../images/gatit.jpg" alt="Hobby 5">
-                <img src="../images/desen.jpg" alt="Hobby 6">
-                <img src="../images/vlogging.jpg" alt="Hobby 7">
-                <img src="../images/carte.jpg" alt="Hobby 6">
-                <img src="../images/voluntar.jpg" alt="Hobby 7">
-            </div>
+    </navbar>
+
+    <main id="main">
+
+        <section id="galerie">
+            <h1 class="centered">Galerie</h1>
+
+            <a href="../index.html" class="link-home">
+                <i class="fas fa-arrow-left"></i>
+                Pagina principală
+            </a>
+
+            <div class="detail container-galerie">
+                <div class="detail container-galerie">
+
+
+
+                    <details>
+                        <summary class="centered"> Alegeri în Consiliul de Elevi</summary>
+
+
+                        <a href="../valori/vot1.jpg" target="_blank">
+                            <img src="../valori/vot1.jpg" data-aos="flip-up"></a>
+                        <a href="../valori/vot2.jpg" target="_blank">
+                            <img src="../valori/vot2.jpg" data-aos="flip-up"></a>
+                        <a href="../valori/vot3.jpg" target="_blank">
+                            <img src="../valori/vot3.jpg" data-aos="flip-up"></a>
+                        <a href="../valori/vot5.jpg" target="_blank">
+                            <img src="../valori/vot5.jpg" data-aos="flip-up"></a>
+                        <a href="../valori/vot6.jpg" target="_blank">
+                            <img src="../valori/vot6.jpg" data-aos="flip-up"></a>
+                        <a href="../valori/vot7.jpg" target="_blank">
+                            <img src="../valori/vot7.jpg" data-aos="flip-up"></a>
+                        <a href="../valori/vot4.jpg" target="_blank">
+                            <img src="../valori/vot4.jpg" data-aos="flip-up"></a>
+
+                            <a href="../valori/vot10.jpg" target="_blank">
+                            <img src="../valori/vot10.jpg" data-aos="flip-up"></a>
+                            <a href="../valori/vot11.jpg" target="_blank">
+                            <img src="../valori/vot11.jpg" data-aos="flip-up"></a>
+
+ <a href="../valori/vot12.jpg" target="_blank">
+                            <img src="../valori/vot12.jpg" data-aos="flip-up"></a>
+                        <a href="../valori/vot13.jpg" target="_blank">
+                            <img src="../valori/vot13.jpg" data-aos="flip-up"></a>
+                      
+
+                    </details>
+
+
+                    <details>
+                        <summary class="centered"> Împreună pentru valori</summary>
+
+
+                        <a href="../valori/2.jpg" target="_blank">
+                            <img src="../valori/2.jpg" data-aos="flip-up"></a>
+                        <a href="../valori/3.jpg" target="_blank">
+                            <img src="../valori/3.jpg" data-aos="flip-up"></a>
+                        <a href="../valori/5.jpg" target="_blank">
+                            <img src="../valori/5.jpg" data-aos="flip-up"></a>
+                        <a href="../valori/6.jpg" target="_blank">
+                            <img src="../valori/6.jpg" data-aos="flip-up"></a>
+                        <a href="../valori/7.jpg" target="_blank">
+                            <img src="../valori/7.jpg" data-aos="flip-up"></a>
+                        <a href="../valori/4.jpg" target="_blank">
+                            <img src="../valori/4.jpg" data-aos="flip-up"></a>
+
+
+                    </details>
+
+
+                    <details>
+                        <summary class="centered">Seminar metodologic al directorilor adjuncți</summary>
+
+                        <a href="../seminar/1.jpg" target="_blank">
+                            <img src="../seminar/1.jpg" data-aos="flip-up"></a>
+                        <a href="../seminar/jubileu.jpg" target="_blank">
+                            <img src="../seminar/jubileu.jpg" data-aos="flip-up"></a>
+
+                        <a href="../seminar/2.jpg" target="_blank">
+                            <img src="../seminar/2.jpg" data-aos="flip-up"></a>
+                        <a href="../seminar/3.jpg" target="_blank">
+                            <img src="../seminar/3.jpg" data-aos="flip-up"></a>
+                        <a href="../seminar/5.jpg" target="_blank">
+                            <img src="../seminar/5.jpg" data-aos="flip-up"></a>
+                        <a href="../seminar/6.jpg" target="_blank">
+                            <img src="../seminar/6.jpg" data-aos="flip-up"></a>
+                        <a href="../seminar/7.jpg" target="_blank">
+                            <img src="../seminar/7.jpg" data-aos="flip-up"></a>
+                        <a href="../seminar/8.jpg" target="_blank">
+                            <img src="../seminar/8.jpg" data-aos="flip-up"></a>
+
+                        <a href="../seminar/9.jpg" target="_blank">
+                            <img src="../seminar/9.jpg" data-aos="flip-up"></a>
+                        <a href="../seminar/10.jpg" target="_blank">
+                            <img src="../seminar/10.jpg" data-aos="flip-up"></a>
+                        <a href="../seminar/11.jpg" target="_blank">
+                            <img src="../seminar/11.jpg" data-aos="flip-up"></a>
+                        <a href="../seminar/12.jpg" target="_blank">
+                            <img src="../seminar/12.jpg" data-aos="flip-up"></a>
+                        <a href="../seminar/13.jpg" target="_blank">
+                            <img src="../seminar/13.jpg" data-aos="flip-up"></a>
+                        <a href="../seminar/14.jpg" target="_blank">
+                            <img src="../seminar/14.jpg" data-aos="flip-up"></a>
+                        <a href="../seminar/15.jpg" target="_blank">
+                            <img src="../seminar/15.jpg" data-aos="flip-up"></a>
+                        <a href="../seminar/16.jpg" target="_blank">
+                            <img src="../seminar/16.jpg" data-aos="flip-up"></a>
+                        <a href="../seminar/17.jpg" target="_blank">
+                            <img src="../seminar/17.jpg" data-aos="flip-up"></a>
+                        <a href="../seminar/18.jpg" target="_blank">
+                            <img src="../seminar/18.jpg" data-aos="flip-up"></a>
+
+                        <a href="../seminar/19.jpg" target="_blank">
+                            <img src="../seminar/19.jpg" data-aos="flip-up"></a>
+
+                        <a href="../seminar/4.jpg" target="_blank">
+                            <img src="../seminar/4.jpg" data-aos="flip-up"></a>
+
+                        <a href="../seminar/20.jpg" target="_blank">
+                            <img src="../seminar/20.jpg" data-aos="flip-up"></a>
+                    </details>
+
+
+
+                    <details>
+                        <summary class="centered">Călătorie prin țările lumii: Germania</summary>
+
+                        <a href="../2025/germania2.jpg" target="_blank">
+                            <img src="../2025/germania2.jpg" data-aos="flip-up"></a>
+                        <a href="../2025/germania.jpg" target="_blank">
+                            <img src="../2025/germania.jpg" data-aos="flip-up"></a>
+
+                        <a href="../2025/germania3.jpg" target="_blank">
+                            <img src="../2025/germania3.jpg" data-aos="flip-up"></a>
+                        <a href="../2025/germania4.jpg" target="_blank">
+                            <img src="../2025/germania4.jpg" data-aos="flip-up"></a>
+                        <a href="../2025/germania5.jpg" target="_blank">
+                            <img src="../2025/germania5.jpg" data-aos="flip-up"></a>
+                        <a href="../2025/germania6.jpg" target="_blank">
+                            <img src="../2025/germania6.jpg" data-aos="flip-up"></a>
+                        <a href="../2025/germania7.jpg" target="_blank">
+                            <img src="../2025/germania7.jpg" data-aos="flip-up"></a>
+
+                        <a href="../2025/germania8.jpg" target="_blank">
+                            <img src="../2025/germania8.jpg" data-aos="flip-up"></a>
+                        <a href="../2025/germania9.jpg" target="_blank">
+                            <img src="../2025/germania9.jpg" data-aos="flip-up"></a>
+                        <a href="../2025/germania10.jpg" target="_blank">
+                            <img src="../2025/germania10.jpg" data-aos="flip-up"></a>
+
+                    </details>
+
+                    <details>
+                        <summary class="centered">Mihai Eminescu - 175 ani</summary>
+
+                        <a href="../2025img/1.jpg" target="_blank">
+                            <img src="../2025img/1.jpg" data-aos="flip-up"></a>
+                        <a href="../2025img/2.jpg" target="_blank">
+                            <img src="../2025img/2.jpg" data-aos="flip-up"></a>
+
+                        <a href="../2025img/3.jpg" target="_blank">
+                            <img src="../2025img/3.jpg" data-aos="flip-up"></a>
+                        <a href="../2025img/4.jpg" target="_blank">
+                            <img src="../2025img/4.jpg" data-aos="flip-up"></a>
+                        <a href="../2025img/5.jpg" target="_blank">
+                            <img src="../2025img/5.jpg" data-aos="flip-up"></a>
+
+                    </details>
+
+                    <details>
+                        <summary class="centered">16 zile de activism împotriva violenței în bază de gen</summary>
+
+                        <a href="../decembrie2024/1.jpg" target="_blank">
+                            <img src="../decembrie2024/1.jpg" data-aos="flip-up"></a>
+                        <a href="../decembrie2024/2.jpg" target="_blank">
+                            <img src="../decembrie2024/2.jpg" data-aos="flip-up"></a>
+
+                        <a href="../decembrie2024/3.jpg" target="_blank">
+                            <img src="../decembrie2024/3.jpg" data-aos="flip-up"></a>
+                        <a href="../decembrie2024/4.jpg" target="_blank">
+                            <img src="../decembrie2024/4.jpg" data-aos="flip-up"></a>
+                        <a href="../decembrie2024/5.jpg" target="_blank">
+                            <img src="../decembrie2024/5.jpg" data-aos="flip-up"></a>
+                        <a href="../decembrie2024/6.jpg" target="_blank">
+                            <img src="../decembrie2024/6.jpg" data-aos="flip-up"></a>
+                        <a href="../decembrie2024/7.jpg" target="_blank">
+                            <img src="../decembrie2024/7.jpg" data-aos="flip-up"></a>
+                        <a href="../decembrie2024/8.jpg" target="_blank">
+                            <img src="../decembrie2024/8.jpg" data-aos="flip-up"></a>
+
+                        <a href="../decembrie2024/9.jpg" target="_blank">
+                            <img src="../decembrie2024/9.jpg" data-aos="flip-up"></a>
+
+
+                    </details>
+                    <details>
+                        <summary class="centered">Concursuri din noiembrie 2024</summary>
+
+                        <a href="../noiembrie2024/21.jpg" target="_blank">
+                            <img src="../noiembrie2024/21.jpg" data-aos="flip-up"></a>
+                        <a href="../noiembrie2024/20.jpg" target="_blank">
+                            <img src="../noiembrie2024/20.jpg" data-aos="flip-up"></a>
+
+                        <a href="../noiembrie2024/22.jpg" target="_blank">
+                            <img src="../noiembrie2024/22.jpg" data-aos="flip-up"></a>
+                        <a href="../noiembrie2024/23.jpg" target="_blank">
+                            <img src="../noiembrie2024/23.jpg" data-aos="flip-up"></a>
+                        <a href="../noiembrie2024/5.jpg" target="_blank">
+                            <img src="../noiembrie2024/5.jpg" data-aos="flip-up"></a>
+                        <a href="../noiembrie2024/6.jpg" target="_blank">
+                            <img src="../noiembrie2024/6.jpg" data-aos="flip-up"></a>
+                        <a href="../noiembrie2024/7.jpg" target="_blank">
+                            <img src="../noiembrie2024/7.jpg" data-aos="flip-up"></a>
+                        <a href="../noiembrie2024/8.jpg" target="_blank">
+                            <img src="../noiembrie2024/8.jpg" data-aos="flip-up"></a>
+
+                        <a href="../noiembrie2024/9.jpg" target="_blank">
+                            <img src="../noiembrie2024/9.jpg" data-aos="flip-up"></a>
+                        <a href="../noiembrie2024/10.jpg" target="_blank">
+                            <img src="../noiembrie2024/10.jpg" data-aos="flip-up"></a>
+                        <a href="../noiembrie2024/11.jpg" target="_blank">
+                            <img src="../noiembrie2024/11.jpg" data-aos="flip-up"></a>
+                        <a href="../noiembrie2024/12.jpg" target="_blank">
+                            <img src="../noiembrie2024/12.jpg" data-aos="flip-up"></a>
+                        <a href="../noiembrie2024/13.jpg" target="_blank">
+                            <img src="../noiembrie2024/13.jpg" data-aos="flip-up"></a>
+                        <a href="../noiembrie2024/14.jpg" target="_blank">
+                            <img src="../noiembrie2024/14.jpg" data-aos="flip-up"></a>
+                        <a href="../noiembrie2024/15.jpg" target="_blank">
+                            <img src="../noiembrie2024/15.jpg" data-aos="flip-up"></a>
+                        <a href="../noiembrie2024/16.jpg" target="_blank">
+                            <img src="../noiembrie2024/16.jpg" data-aos="flip-up"></a>
+                        <a href="../noiembrie2024/17.jpg" target="_blank">
+                            <img src="../noiembrie2024/17.jpg" data-aos="flip-up"></a>
+                        <a href="../noiembrie2024/18.jpg" target="_blank">
+                            <img src="../noiembrie2024/18.jpg" data-aos="flip-up"></a>
+
+                        <a href="../noiembrie2024/19.jpg" target="_blank">
+                            <img src="../noiembrie2024/19.jpg" data-aos="flip-up"></a>
+
+                    </details>
+
+
+                    <details>
+                        <summary class="centered">DeutschMobil 2024</summary>
+
+                        <a href="../deutsch/1.jpg" target="_blank">
+                            <img src="../deutsch/1.jpg" data-aos="flip-up"></a>
+                        <a href="../deutsch/2.jpg" target="_blank">
+                            <img src="../deutsch/2.jpg" data-aos="flip-up"></a>
+
+                        <a href="../deutsch/3.jpg" target="_blank">
+                            <img src="../deutsch/3.jpg" data-aos="flip-up"></a>
+                        <a href="../deutsch/4.jpg" target="_blank">
+                            <img src="../deutsch/4.jpg" data-aos="flip-up"></a>
+                        <a href="../deutsch/5.jpg" target="_blank">
+                            <img src="../deutsch/5.jpg" data-aos="flip-up"></a>
+                        <a href="../deutsch/6.jpg" target="_blank">
+                            <img src="../deutsch/6.jpg" data-aos="flip-up"></a>
+                        <a href="../deutsch/7.jpg" target="_blank">
+                            <img src="../deutsch/7.jpg" data-aos="flip-up"></a>
+                        <a href="../deutsch/8.jpg" target="_blank">
+                            <img src="../deutsch/8.jpg" data-aos="flip-up"></a>
+
+                        <a href="../deutsch/9.jpg" target="_blank">
+                            <img src="../deutsch/9.jpg" data-aos="flip-up"></a>
+                        <a href="../deutsch/10.jpg" target="_blank">
+                            <img src="../deutsch/10.jpg" data-aos="flip-up"></a>
+                        <a href="../deutsch/11.jpg" target="_blank">
+                            <img src="../deutsch/11.jpg" data-aos="flip-up"></a>
+                        <a href="../deutsch/12.jpg" target="_blank">
+                            <img src="../deutsch/12.jpg" data-aos="flip-up"></a>
+                        <a href="../deutsch/13.jpg" target="_blank">
+                            <img src="../deutsch/13.jpg" data-aos="flip-up"></a>
+                        <a href="../deutsch/14.jpg" target="_blank">
+                            <img src="../deutsch/14.jpg" data-aos="flip-up"></a>
+                        <a href="../deutsch/15.jpg" target="_blank">
+                            <img src="../deutsch/15.jpg" data-aos="flip-up"></a>
+                        <a href="../deutsch/16.jpg" target="_blank">
+                            <img src="../deutsch/16.jpg" data-aos="flip-up"></a>
+                        <a href="../deutsch/17.jpg" target="_blank">
+                            <img src="../deutsch/17.jpg" data-aos="flip-up"></a>
+                        <a href="../deutsch/18.jpg" target="_blank">
+                            <img src="../deutsch/18.jpg" data-aos="flip-up"></a>
+
+                        <a href="../deutsch/19.jpg" target="_blank">
+                            <img src="../deutsch/19.jpg" data-aos="flip-up"></a>
+
+                    </details>
+                    <details>
+                        <summary class="centered">Spune NU traficului de ființe umane!</summary>
+
+                        <a href="../octombrie/1.jpg" target="_blank">
+                            <img src="../octombrie/1.jpg" data-aos="flip-up"></a>
+                        <a href="../octombrie/2.jpg" target="_blank">
+                            <img src="../octombrie/2.jpg" data-aos="flip-up"></a>
+
+                        <a href="../octombrie/3.jpg" target="_blank">
+                            <img src="../octombrie/3.jpg" data-aos="flip-up"></a>
+                        <a href="../octombrie/4.jpg" target="_blank">
+                            <img src="../octombrie/4.jpg" data-aos="flip-up"></a>
+                        <a href="../octombrie/5.jpg" target="_blank">
+                            <img src="../octombrie/5.jpg" data-aos="flip-up"></a>
+                        <a href="../octombrie/6.jpg" target="_blank">
+                            <img src="../octombrie/6.jpg" data-aos="flip-up"></a>
+                        <a href="../octombrie/7.jpg" target="_blank">
+                            <img src="../octombrie/7.jpg" data-aos="flip-up"></a>
+                        <a href="../octombrie/8.jpg" target="_blank">
+                            <img src="../octombrie/8.jpg" data-aos="flip-up"></a>
+
+                        <a href="../octombrie/9.jpg" target="_blank">
+                            <img src="../octombrie/9.jpg" data-aos="flip-up"></a>
+                        <a href="../octombrie/10.jpg" target="_blank">
+                            <img src="../octombrie/10.jpg" data-aos="flip-up"></a>
+                        <a href="../octombrie/11.jpg" target="_blank">
+                            <img src="../octombrie/11.jpg" data-aos="flip-up"></a>
+                        <a href="../octombrie/3.png" target="_blank">
+                            <img src="../octombrie/3.png" data-aos="flip-up"></a>
+                        <a href="../octombrie/13.jpg" target="_blank">
+                            <img src="../octombrie/13.jpg" data-aos="flip-up"></a>
+                        <a href="../octombrie/14.jpg" target="_blank">
+                            <img src="../octombrie/14.jpg" data-aos="flip-up"></a>
+                        <a href="../octombrie/15.jpg" target="_blank">
+                            <img src="../octombrie/15.jpg" data-aos="flip-up"></a>
+                        <a href="../octombrie/16.jpg" target="_blank">
+                            <img src="../octombrie/16.jpg" data-aos="flip-up"></a>
+                        <a href="../octombrie/17.jpg" target="_blank">
+                            <img src="../octombrie/17.jpg" data-aos="flip-up"></a>
+                        <a href="../octombrie/18.jpg" target="_blank">
+                            <img src="../octombrie/18.jpg" data-aos="flip-up"></a>
+
+                        <a href="../octombrie/19.jpg" target="_blank">
+                            <img src="../octombrie/19.jpg" data-aos="flip-up"></a>
+                        <a href="../octombrie/20.jpg" target="_blank">
+                            <img src="../octombrie/20.jpg" data-aos="flip-up"></a>
+                    </details>
+
+                    <div class="detail container-galerie">
+                        <details>
+                            <summary class="centered">Electorale 2024</summary>
+
+                            <a href="../alegeri/1.jpg" target="_blank">
+                                <img src="../alegeri/1.jpg" data-aos="flip-up"></a>
+                            <a href="../alegeri/2.jpg" target="_blank">
+                                <img src="../alegeri/2.jpg" data-aos="flip-up"></a>
+
+                            <a href="../alegeri/3.jpg" target="_blank">
+                                <img src="../alegeri/3.jpg" data-aos="flip-up"></a>
+                            <a href="../alegeri/4.jpg" target="_blank">
+                                <img src="../alegeri/4.jpg" data-aos="flip-up"></a>
+                            <a href="../alegeri/5.jpg" target="_blank">
+                                <img src="../alegeri/5.jpg" data-aos="flip-up"></a>
+                            <a href="../alegeri/6.jpg" target="_blank">
+                                <img src="../alegeri/6.jpg" data-aos="flip-up"></a>
+                            <a href="../alegeri/7.jpg" target="_blank">
+                                <img src="../alegeri/7.jpg" data-aos="flip-up"></a>
+                            <a href="../alegeri/8.jpg" target="_blank">
+                                <img src="../alegeri/8.jpg" data-aos="flip-up"></a>
+
+                            <a href="../alegeri/9.jpg" target="_blank">
+                                <img src="../alegeri/9.jpg" data-aos="flip-up"></a>
+                            <a href="../alegeri/10.jpg" target="_blank">
+                                <img src="../alegeri/10.jpg" data-aos="flip-up"></a>
+                            <a href="../alegeri/11.jpg" target="_blank">
+                                <img src="../alegeri/11.jpg" data-aos="flip-up"></a>
+                            <a href="../alegeri/12.jpg" target="_blank">
+                                <img src="../alegeri/12.jpg" data-aos="flip-up"></a>
+                            <a href="../alegeri/13.jpg" target="_blank">
+                                <img src="../alegeri/13.jpg" data-aos="flip-up"></a>
+                            <a href="../alegeri/14.jpg" target="_blank">
+                                <img src="../alegeri/14.jpg" data-aos="flip-up"></a>
+                            <a href="../alegeri/15.jpg" target="_blank">
+                                <img src="../alegeri/15.jpg" data-aos="flip-up"></a>
+                        </details>
+                        <details>
+                            <summary class="centered">Ziua Păcii</summary>
+
+                            <a href="../pacea/1.jpg" target="_blank">
+                                <img src="../pacea/1.jpg" data-aos="flip-up"></a>
+                            <a href="../pacea/2.jpg" target="_blank">
+                                <img src="../pacea/2.jpg" data-aos="flip-up"></a>
+
+                            <a href="../pacea/3.jpg" target="_blank">
+                                <img src="../pacea/3.jpg" data-aos="flip-up"></a>
+                            <a href="../pacea/4.jpg" target="_blank">
+                                <img src="../pacea/4.jpg" data-aos="flip-up"></a>
+                            <a href="../pacea/5.jpg" target="_blank">
+                                <img src="../pacea/5.jpg" data-aos="flip-up"></a>
+                            <a href="../pacea/6.jpg" target="_blank">
+                                <img src="../pacea/6.jpg" data-aos="flip-up"></a>
+                            <a href="../pacea/7.jpg" target="_blank">
+                                <img src="../pacea/7.jpg" data-aos="flip-up"></a>
+                            <a href="../pacea/8.jpg" target="_blank">
+                                <img src="../pacea/8.jpg" data-aos="flip-up"></a>
+
+                            <a href="../pacea/9.jpg" target="_blank">
+                                <img src="../pacea/9.jpg" data-aos="flip-up"></a>
+                            <a href="../pacea/10.jpg" target="_blank">
+                                <img src="../pacea/10.jpg" data-aos="flip-up"></a>
+                            <a href="../pacea/11.jpg" target="_blank">
+                                <img src="../pacea/11.jpg" data-aos="flip-up"></a>
+                            <a href="../pacea/12.jpg" target="_blank">
+                                <img src="../pacea/12.jpg" data-aos="flip-up"></a>
+                            <a href="../pacea/13.jpg" target="_blank">
+                                <img src="../pacea/13.jpg" data-aos="flip-up"></a>
+                            <a href="../pacea/14.jpg" target="_blank">
+                                <img src="../pacea/14.jpg" data-aos="flip-up"></a>
+                            <a href="../pacea/15.jpg" target="_blank">
+                                <img src="../pacea/15.jpg" data-aos="flip-up"></a>
+                            <a href="../pacea/16.jpg" target="_blank">
+                                <img src="../pacea/16.jpg" data-aos="flip-up"></a>
+                            <a href="../pacea/17.jpg" target="_blank">
+                                <img src="../pacea/17.jpg" data-aos="flip-up"></a>
+                            <a href="../pacea/18.jpg" target="_blank">
+                                <img src="../pacea/18.jpg" data-aos="flip-up"></a>
+
+                            <a href="../pacea/9.jpg" target="_blank">
+                                <img src="../pacea/9.jpg" data-aos="flip-up"></a>
+
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/pPOQXa3ApKU?si=tuCGWN4T9qc6ku1N"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </details>
+                        <details>
+                            <summary class="centered">Semiar cu Centrului Prietenos Tinerilor</summary>
+
+                            <a href="../2024-2025/1.jpg" target="_blank">
+                                <img src="../2024-2025/1.jpg" data-aos="flip-up"></a>
+                            <a href="../2024-2025/2.jpg" target="_blank">
+                                <img src="../2024-2025/2.jpg" data-aos="flip-up"></a>
+
+                            <a href="../2024-2025/3.jpg" target="_blank">
+                                <img src="../2024-2025/3.jpg" data-aos="flip-up"></a>
+                            <a href="../2024-2025/4.jpg" target="_blank">
+                                <img src="../2024-2025/4.jpg" data-aos="flip-up"></a>
+                            <a href="../2024-2025/5.jpg" target="_blank">
+                                <img src="../2024-2025/5.jpg" data-aos="flip-up"></a>
+                            <a href="../2024-2025/6.jpg" target="_blank">
+                                <img src="../2024-2025/6.jpg" data-aos="flip-up"></a>
+
+                        </details>
+                        <details>
+                            <summary class="centered">Academia Basarabiei iulie 2024</summary>
+
+                            <a href="../agiro/1.jpg" target="_blank">
+                                <img src="../agiro/1.jpg" data-aos="flip-up"></a>
+                            <a href="../agiro/2.jpg" target="_blank">
+                                <img src="../agiro/2.jpg" data-aos="flip-up"></a>
+
+                            <a href="../agiro/3.jpg" target="_blank">
+                                <img src="../agiro/3.jpg" data-aos="flip-up"></a>
+                            <a href="../agiro/4.jpg" target="_blank">
+                                <img src="../agiro/4.jpg" data-aos="flip-up"></a>
+                            <a href="../agiro/5.jpg" target="_blank">
+                                <img src="../agiro/5.jpg" data-aos="flip-up"></a>
+                            <a href="../agiro/6.jpg" target="_blank">
+                                <img src="../agiro/6.jpg" data-aos="flip-up"></a>
+                            <a href="../agiro/7.jpg" target="_blank">
+                                <img src="../agiro/7.jpg" data-aos="flip-up"></a>
+                            <a href="../agiro/8.jpg" target="_blank">
+                                <img src="../agiro/8.jpg" data-aos="flip-up"></a>
+
+                            <a href="../agiro/9.jpg" target="_blank">
+                                <img src="../agiro/9.jpg" data-aos="flip-up"></a>
+                            <a href="../agiro/10.jpg" target="_blank">
+                                <img src="../agiro/10.jpg" data-aos="flip-up"></a>
+                            <a href="../agiro/11.jpg" target="_blank">
+                                <img src="../agiro/11.jpg" data-aos="flip-up"></a>
+                            <a href="../agiro/12.jpg" target="_blank">
+                                <img src="../agiro/12.jpg" data-aos="flip-up"></a>
+
+
+                        </details>
+
+                        <details>
+                            <summary class="centered">Ziua Tricolorului</summary>
+
+                            <a href="../tricolor/1.jpg" target="_blank">
+                                <img src="../tricolor/1.jpg" data-aos="flip-up"></a>
+                            <a href="../tricolor/2.jpg" target="_blank">
+                                <img src="../tricolor/2.jpg" data-aos="flip-up"></a>
+
+                            <a href="../tricolor/3.jpg" target="_blank">
+                                <img src="../tricolor/3.jpg" data-aos="flip-up"></a>
+                            <a href="../tricolor/4.jpg" target="_blank">
+                                <img src="../tricolor/4.jpg" data-aos="flip-up"></a>
+                            <a href="../tricolor/5.jpg" target="_blank">
+                                <img src="../tricolor/5.jpg" data-aos="flip-up"></a>
+                            <a href="../tricolor/6.jpg" target="_blank">
+                                <img src="../tricolor/6.jpg" data-aos="flip-up"></a>
+                            <a href="../tricolor/7.jpg" target="_blank">
+                                <img src="../tricolor/7.jpg" data-aos="flip-up"></a>
+                            <a href="../tricolor/8.jpg" target="_blank">
+                                <img src="../tricolor/8.jpg" data-aos="flip-up"></a>
+
+                            <a href="../tricolor/9.jpg" target="_blank">
+                                <img src="../tricolor/9.jpg" data-aos="flip-up"></a>
+                            <a href="../tricolor/10.jpg" target="_blank">
+                                <img src="../tricolor/10.jpg" data-aos="flip-up"></a>
+                            <a href="../tricolor/11.jpg" target="_blank">
+                                <img src="../tricolor/11.jpg" data-aos="flip-up"></a>
+                            <a href="../tricolor/12.jpg" target="_blank">
+                                <img src="../tricolor/12.jpg" data-aos="flip-up"></a>
+
+                            <iframe width="560" height="315"
+                                src="https://www.youtube.com/embed/JDRCBJDJWWM?si=KYsiMq_2-E3kk24R&amp;start=2"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </details>
+
+
+
+                        <details>
+                            <summary class="centered">Haideţi, fetelor</summary>
+
+                            <a href="../fetele/1.jpg" target="_blank">
+                                <img src="../fetele/1.jpg" data-aos="flip-up"></a>
+                            <a href="../fetele/2.jpg" target="_blank">
+                                <img src="../fetele/2.jpg" data-aos="flip-up"></a>
+
+                            <a href="../fetele/3.jpg" target="_blank">
+                                <img src="../fetele/3.jpg" data-aos="flip-up"></a>
+                            <a href="../fetele/4.jpg" target="_blank">
+                                <img src="../fetele/4.jpg" data-aos="flip-up"></a>
+                            <a href="../fetele/5.jpg" target="_blank">
+                                <img src="../fetele/5.jpg" data-aos="flip-up"></a>
+                            <a href="../fetele/6.jpg" target="_blank">
+                                <img src="../fetele/6.jpg" data-aos="flip-up"></a>
+                            <a href="../fetele/7.jpg" target="_blank">
+                                <img src="../fetele/7.jpg" data-aos="flip-up"></a>
+                            <a href="../fetele/8.jpg" target="_blank">
+                                <img src="../fetele/8.jpg" data-aos="flip-up"></a>
+
+                            <a href="../fetele/9.jpg" target="_blank">
+                                <img src="../fetele/9.jpg" data-aos="flip-up"></a>
+                            <a href="../fetele/10.jpg" target="_blank">
+                                <img src="../fetele/10.jpg" data-aos="flip-up"></a>
+                            <a href="../fetele/11.jpg" target="_blank">
+                                <img src="../fetele/11.jpg" data-aos="flip-up"></a>
+                            <a href="../fetele/12.jpg" target="_blank">
+                                <img src="../fetele/12.jpg" data-aos="flip-up"></a>
+
+
+                        </details>
+
+                        <details>
+                            <summary class="centered">Alimemtația sănătoasă</summary>
+
+                            <a href="../martie2024/aliment1.jpg" target="_blank">
+                                <img src="../martie2024/aliment1.jpg" data-aos="flip-up"></a>
+                            <a href="../martie2024/aliment2.jpg" target="_blank">
+                                <img src="../martie2024/aliment2.jpg" data-aos="flip-up"></a>
+
+                            <a href="../martie2024/aliment3.jpg" target="_blank">
+                                <img src="../martie2024/aliment3.jpg" data-aos="flip-up"></a>
+                            <a href="../martie2024/aliment4.jpg" target="_blank">
+                                <img src="../martie2024/aliment4.jpg" data-aos="flip-up"></a>
+                            <a href="../martie2024/aliment5.jpg" target="_blank">
+                                <img src="../martie2024/aliment5.jpg" data-aos="flip-up"></a>
+                            <a href="../martie2024/aliment6.jpg" target="_blank">
+                                <img src="../martie2024/aliment6.jpg" data-aos="flip-up"></a>
+
+
+
+                        </details>
+
+                        <details>
+                            <summary class="centered">Ziua Mondială a Poeziei</summary>
+
+                            <a href="../martie2024/p1.jpg" target="_blank">
+                                <img src="../martie2024/p1.jpg" data-aos="flip-up"></a>
+                            <a href="../martie2024/p2.jpg" target="_blank">
+                                <img src="../martie2024/p2.jpg" data-aos="flip-up"></a>
+
+                            <a href="../martie2024/p3.jpg" target="_blank">
+                                <img src="../martie2024/p3.jpg" data-aos="flip-up"></a>
+                            <a href="../martie2024/p5.jpg" target="_blank">
+                                <img src="../martie2024/p5.jpg" data-aos="flip-up"></a>
+                            <a href="../martie2024/p6.jpg" target="_blank">
+                                <img src="../martie2024/p6.jpg" data-aos="flip-up"></a>
+                            <a href="../martie2024/p7.jpg" target="_blank">
+                                <img src="../martie2024/p7.jpg" data-aos="flip-up"></a>
+
+
+                            <a href="../martie2024/p8.jpg" target="_blank">
+                                <img src="../martie2024/p8.jpg" data-aos="flip-up"></a>
+                            <a href="../martie2024/p9.jpg" target="_blank">
+                                <img src="../martie2024/p9.jpg" data-aos="flip-up"></a>
+
+                            <a href="../martie2024/p10.jpg" target="_blank">
+                                <img src="../martie2024/p10.jpg" data-aos="flip-up"></a>
+                            <a href="../martie2024/p11.jpg" target="_blank">
+                                <img src="../martie2024/p11.jpg" data-aos="flip-up"></a>
+                            <a href="../martie2024/p15.jpg" target="_blank">
+                                <img src="../martie2024/p15.jpg" data-aos="flip-up"></a>
+                            <a href="../martie2024/p17.jpg" target="_blank">
+                                <img src="../martie2024/p17.jpg" data-aos="flip-up"></a>
+                            <a href="../martie2024/p16.jpg" target="_blank">
+                                <img src="../martie2024/p16.jpg" data-aos="flip-up"></a>
+
+                            <iframe width="350" height="215"
+                                src="https://www.youtube.com/embed/MfnRUaKRERA?si=aHxmnxKcb0PQ-dza"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        </details>
+
+
+                        <details>
+                            <summary class="centered">Rolul părinților în reușita școlară</summary>
+
+                            <a href="../2024/1.jpg" target="_blank">
+                                <img src="../2024/1.jpg" data-aos="flip-up"></a>
+                            <a href="../2024/2.jpg" target="_blank">
+                                <img src="../2024/2.jpg" data-aos="flip-up"></a>
+
+                            <a href="../2024/3.jpg" target="_blank">
+                                <img src="../2024/3.jpg" data-aos="flip-up"></a>
+                            <a href="../2024/4.jpg" target="_blank">
+                                <img src="../2024/4.jpg" data-aos="flip-up"></a>
+                            <a href="../2024/5.jpg" target="_blank">
+                                <img src="../2024/5.jpg" data-aos="flip-up"></a>
+                            <a href="../2024/6.jpg" target="_blank">
+                                <img src="../2024/6.jpg" data-aos="flip-up"></a>
+
+                            <a href="../2024/7.jpg" target="_blank">
+                                <img src="../2024/7.jpg" data-aos="flip-up"></a>
+                            <a href="../2024/8.jpg" target="_blank">
+                                <img src="../2024//8.jpg" data-aos="flip-up"></a>
+
+                        </details>
+
+                        <details>
+                            <summary class="centered">Traista cu sănătate</summary>
+
+                            <a href="../2024/traista/1.jpg" target="_blank">
+                                <img src="../2024/traista/1.jpg" data-aos="flip-up"></a>
+
+                            <a href="../2024/traista/3.jpg" target="_blank">
+                                <img src="../2024/traista/3.jpg" data-aos="flip-up"></a>
+
+                            <a href="../2024/traista/5.jpg" target="_blank">
+                                <img src="../2024/traista/5.jpg" data-aos="flip-up"></a>
+                            <a href="../2024/traista/6.jpg" target="_blank">
+                                <img src="../2024/traista/6.jpg" data-aos="flip-up"></a>
+                            <a href="../2024/traista/4.jpg" target="_blank">
+                                <img src="../2024/traista/4.jpg" data-aos="flip-up"></a>
+                            <a href="../2024/traista/7.jpg" target="_blank">
+                                <img src="../2024/traista/7.jpg" data-aos="flip-up"></a>
+                            <a href="../2024/traista/8.jpg" target="_blank">
+                                <img src="../2024/traista//8.jpg" data-aos="flip-up"></a>
+                            <a href="../2024/traista/9.jpg" target="_blank">
+                                <img src="../2024/traista/9.jpg" data-aos="flip-up"></a>
+
+                        </details>
+
+                        <details>
+                            <summary class="centered">Ziua Mondială a Toleranței - 16 noiembrie</summary>
+
+                            <a href="../electorala/toler/1.jpg" target="_blank">
+                                <img src="../electorala/toler/1.jpg" data-aos="flip-up"></a>
+                            <a href="../electorala/toler/2.jpg" target="_blank">
+                                <img src="../electorala/toler/2.jpg" data-aos="flip-up"></a>
+                            <a href="../electorala/toler/3.jpg" target="_blank">
+                                <img src="../electorala/toler/3.jpg" data-aos="flip-up"></a>
+
+                            <a href="../electorala/toler/5.jpg" target="_blank">
+                                <img src="../electorala/toler/5.jpg" data-aos="flip-up"></a>
+                            <a href="../electorala/toler/6.jpg" target="_blank">
+                                <img src="../electorala/toler/6.jpg" data-aos="flip-up"></a>
+                            <a href="../electorala/toler/7.jpg" target="_blank">
+                                <img src="../electorala/toler/7.jpg" data-aos="flip-up"></a>
+                            <a href="../electorala/toler/4.jpg" target="_blank">
+                                <img src="../electorala/toler/4.jpg" data-aos="flip-up"></a>
+                            <a href="../electorala/toler/8.jpg" target="_blank">
+                                <img src="../electorala/toler/8.jpg" data-aos="flip-up"></a>
+                            <a href="../electorala/toler/9.jpg" target="_blank">
+                                <img src="../electorala/toler/9.jpg" data-aos="flip-up"></a>
+
+                            <a href="../electorala/toler/10.jpg" target="_blank">
+                                <img src="../electorala/toler/10.jpg" data-aos="flip-up"></a>
+                            <a href="../electorala/toler/11.jpg" target="_blank">
+                                <img src="../electorala/toler/11.jpg" data-aos="flip-up"></a>
+                            <a href="../electorala/toler/12.jpg" target="_blank">
+                                <img src="../electorala/toler/12.jpg" data-aos="flip-up"></a>
+
+                            <a href="../electorala/toler/13.jpg" target="_blank">
+                                <img src="../electorala/toler/13.jpg" data-aos="flip-up"></a>
+                            <a href="../electorala/toler/14.jpg" target="_blank">
+                                <img src="../electorala/toler/14.jpg" data-aos="flip-up"></a>
+                            <a href="../electorala/toler/15.jpg" target="_blank">
+                                <img src="../electorala/toler/15.jpg" data-aos="flip-up"></a>
+                            <a href="../electorala/toler/16.jpg" target="_blank">
+                                <img src="../electorala/toler/16.jpg" data-aos="flip-up"></a>
+
+                            <a href="../electorala/toler/17.jpg" target="_blank">
+                                <img src="../electorala/toler/17.jpg" data-aos="flip-up"></a>
+                            <a href="../electorala/toler/18.jpg" target="_blank">
+                                <img src="../electorala/toler/18.jpg" data-aos="flip-up"></a>
+
+
+                        </details>
+
+                        <details>
+                            <summary class="centered">Întâlnire cu scriitorul Aurelian Silvestru</summary>
+
+                            <a href="../electorala/as/1.jpg" target="_blank">
+                                <img src="../electorala/as/1.jpg" data-aos="flip-up"></a>
+                            <a href="../electorala/as/2.jpg" target="_blank">
+                                <img src="../electorala/as/2.jpg" data-aos="flip-up"></a>
+                            <a href="../electorala/as/3.jpg" target="_blank">
+                                <img src="../electorala/as/3.jpg" data-aos="flip-up"></a>
+
+                            <a href="../electorala/as/5.jpg" target="_blank">
+                                <img src="../electorala/as/5.jpg" data-aos="flip-up"></a>
+                            <a href="../electorala/as/6.jpg" target="_blank">
+                                <img src="../electorala/as/6.jpg" data-aos="flip-up"></a>
+                            <a href="../electorala/as/4.jpg" target="_blank">
+                                <img src="../electorala/as/4.jpg" data-aos="flip-up"></a>
+                            <a href="../electorala/as/7.jpg" target="_blank">
+                                <img src="../electorala/as/7.jpg" data-aos="flip-up"></a>
+                            <a href="../electorala/as/8.jpg" target="_blank">
+                                <img src="../electorala/as/8.jpg" data-aos="flip-up"></a>
+                            <a href="../electorala/as/9.jpg" target="_blank">
+                                <img src="../electorala/as/9.jpg" data-aos="flip-up"></a>
+
+                        </details>
+
+                        <details>
+                            <summary class="centered">Rolul psihologului în sistemul educativ</summary>
+
+                            <a href="../electorala/mc1.jpg" target="_blank">
+                                <img src="../electorala/mc1.jpg" data-aos="flip-up"></a>
+                            <a href="../electorala/mc2.jpg" target="_blank">
+                                <img src="../electorala/mc2.jpg" data-aos="flip-up"></a>
+                            <a href="../electorala/mc3.jpg" target="_blank">
+                                <img src="../electorala/mc3.jpg" data-aos="flip-up"></a>
+
+                            <a href="../electorala/mc5.jpg" target="_blank">
+                                <img src="../electorala/mc5.jpg" data-aos="flip-up"></a>
+
+                            <a href="../electorala/mc4.jpg" target="_blank">
+                                <img src="../electorala/mc4.jpg" data-aos="flip-up"></a>
+
+                        </details>
+
+
+
+
+
+
+
+
+                        <details>
+                            <summary class="centered">Pentru Pace, mulțumim frumos!</summary>
+
+                            <a href="../electorala/pacea/1.jpg" target="_blank">
+                                <img src="../electorala/pacea/1.jpg" data-aos="flip-up"></a>
+                            <a href="../electorala/pacea/2.jpg" target="_blank">
+                                <img src="../electorala/pacea/2.jpg" data-aos="flip-up"></a>
+                            <a href="../electorala/pacea/3.jpg" target="_blank">
+                                <img src="../electorala/pacea/3.jpg" data-aos="flip-up"></a>
+
+                            <a href="../electorala/pacea/5.jpg" target="_blank">
+                                <img src="../electorala/pacea/5.jpg" data-aos="flip-up"></a>
+                            <a href="../electorala/pacea/6.jpg" target="_blank">
+                                <img src="../electorala/pacea/6.jpg" data-aos="flip-up"></a>
+                            <a href="../electorala/pacea/4.jpg" target="_blank">
+                                <img src="../electorala/pacea/4.jpg" data-aos="flip-up"></a>
+
+                        </details>
+
+
+                        <details>
+                            <summary class="centered">Educația Electorală</summary>
+
+                            <a href="../electorala/1.jpg" target="_blank">
+                                <img src="../electorala/1.jpg" data-aos="flip-up"></a>
+                            <a href="../electorala/2.jpg" target="_blank">
+                                <img src="../electorala/2.jpg" data-aos="flip-up"></a>
+                            <a href="../electorala/3.jpg" target="_blank">
+                                <img src="../electorala/3.jpg" data-aos="flip-up"></a>
+
+                            <a href="../electorala/5.jpg" target="_blank">
+                                <img src="../electorala/5.jpg" data-aos="flip-up"></a>
+                            <a href="../electorala/6.jpg" target="_blank">
+                                <img src="../electorala/6.jpg" data-aos="flip-up"></a>
+                            <a href="../electorala/7.jpg" target="_blank">
+                                <img src="../electorala/7.jpg" data-aos="flip-up"></a>
+                            <a href="../electorala/4.jpg" target="_blank">
+                                <img src="../electorala/4.jpg" data-aos="flip-up"></a>
+                            <a href="../electorala/8.jpg" target="_blank">
+                                <img src="../electorala/8.jpg" data-aos="flip-up"></a>
+                            <a href="../electorala/9.jpg" target="_blank">
+                                <img src="../electorala/9.jpg" data-aos="flip-up"></a>
+
+                            <a href="../electorala/10.jpg" target="_blank">
+                                <img src="../electorala/10.jpg" data-aos="flip-up"></a>
+                            <a href="../electorala/11.jpg" target="_blank">
+                                <img src="../electorala/11.jpg" data-aos="flip-up"></a>
+                            <a href="../electorala/12.jpg" target="_blank">
+                                <img src="../electorala/12.jpg" data-aos="flip-up"></a>
+
+                            <a href="../electorala/13.jpg" target="_blank">
+                                <img src="../electorala/13.jpg" data-aos="flip-up"></a>
+                            <a href="../electorala/14.jpg" target="_blank">
+                                <img src="../electorala/14.jpg" data-aos="flip-up"></a>
+                            <a href="../electorala/15.jpg" target="_blank">
+                                <img src="../electorala/15.jpg" data-aos="flip-up"></a>
+                        </details>
+
+
+                        <details>
+                            <summary class="centered">Tabăra de vară 2023</summary>
+
+                            <a href="../tabara/t1.jpg" target="_blank">
+                                <img src="../tabara/t1.jpg" data-aos="flip-up"></a>
+                            <a href="../tabara/t10.jpg " target="_blank">
+                                <img src="../tabara/t10.jpg" data-aos="flip-up"></a>
+                            <a href="../tabara/t11.jpg" target="_blank">
+                                <img src="../tabara/t11.jpg" data-aos="flip-up"></a>
+
+                            <a href="../tabara/t12.jpg" target="_blank">
+                                <img src="../tabara/t12.jpg" data-aos="flip-up"></a>
+                            <a href="../tabara/t13.jpg" target="_blank">
+                                <img src="../tabara/t13.jpg" data-aos="flip-up"></a>
+                            <a href="../tabara/t14.jpg" target="_blank">
+                                <img src="../tabara/t14.jpg" data-aos="flip-up"></a>
+
+                            <a href="../tabara/t15.jpg" target="_blank">
+                                <img src="../tabara/t15.jpg" data-aos="flip-up"></a>
+                            <a href="../tabara/t16.jpg" target="_blank">
+                                <img src="../tabara/t16.jpg" data-aos="flip-up"></a>
+
+                            <a href="../tabara/t17.jpg" target="_blank">
+                                <img src="../tabara/t17.jpg" data-aos="flip-up"></a>
+                            <a href="../tabara/t18.jpg" target="_blank">
+                                <img src="../tabara/t18.jpg" data-aos="flip-up"></a>
+                            <a href="../tabara/t19.jpg" target="_blank">
+                                <img src="../tabara/t19.jpg" data-aos="flip-up"></a>
+
+                            <a href="../tabara/t2.jpg" target="_blank">
+                                <img src="../tabara/t2.jpg" data-aos="flip-up"></a>
+                            <a href="../tabara/t20.jpg" target="_blank">
+                                <img src="../tabara/t20.jpg" data-aos="flip-up"></a>
+
+                            <a href="../tabara/t21.jpg" target="_blank">
+                                <img src="../tabara/t21.jpg" data-aos="flip-up"></a>
+                            <a href="../tabara/t22.jpg" target="_blank">
+                                <img src="../tabara/t22.jpg" data-aos="flip-up"></a>
+                            <a href="../tabara/t23.jpg" target="_blank">
+                                <img src="../tabara/t23.jpg" data-aos="flip-up"></a>
+
+                            <a href="../tabara/t24.jpg" target="_blank">
+                                <img src="../tabara/t24.jpg" data-aos="flip-up"></a>
+                            <a href="../tabara/t25.jpg" target="_blank">
+                                <img src="../tabara/t25.jpg" data-aos="flip-up"></a>
+                            <a href="../tabara/t26.jpg" target="_blank">
+                                <img src="../tabara/t26.jpg" data-aos="flip-up"></a>
+
+                            <a href="../tabara/t3.jpg" target="_blank">
+                                <img src="../tabara/t3.jpg" data-aos="flip-up"></a>
+                            <a href="../tabara/t4.jpg" target="_blank">
+                                <img src="../tabara/t4.jpg" data-aos="flip-up"></a>
+
+                            <a href="../tabara/t5.jpg" target="_blank">
+                                <img src="../tabara/t5.jpg" data-aos="flip-up"></a>
+                            <a href="../tabara/t6.jpg" target="_blank">
+                                <img src="../tabara/t6.jpg" data-aos="flip-up"></a>
+                            <a href="../tabara/t7.jpg" target="_blank">
+                                <img src="../tabara/t7.jpg" data-aos="flip-up"></a>
+                            <a href="../tabara/t8.jpg" target="_blank">
+                                <img src="../tabara/t8.jpg" data-aos="flip-up"></a>
+                            <a href="../tabara/t9.jpg" target="_blank">
+                                <img src="../tabara/t9.jpg" data-aos="flip-up"></a>
+
+
+                        </details>
+
+
+                        <details>
+                            <summary class="centered">Diplomele se numără in mai</summary>
+
+                            <a href="../mai/diplome (1).jpg" target="_blank">
+                                <img src="../mai/diplome (1).jpg" data-aos="flip-up"></a>
+                            <a href="../mai/diplome (2).jpg " target="_blank">
+                                <img src="../mai/diplome (2).jpg" data-aos="flip-up"></a>
+                            <a href="../mai/diplome (3)" target="_blank">
+                                <img src="../mai/diplome (3).jpg" data-aos="flip-up"></a>
+
+                            <a href="../mai/diplome (4).jpg" target="_blank">
+                                <img src="../mai/diplome (4).jpg" data-aos="flip-up"></a>
+                            <a href="../mai/diplome (5).jpg" target="_blank">
+                                <img src="../mai/diplome (5).jpg" data-aos="flip-up"></a>
+                            <a href="../mai/diplome (6).jpg" target="_blank">
+                                <img src="../mai/diplome (6).jpg" data-aos="flip-up"></a>
+
+                            <a href="../mai/diplome (7).jpg" target="_blank">
+                                <img src="../mai/diplome (7).jpg" data-aos="flip-up"></a>
+                            <a href="../mai/diplome (8).jpg" target="_blank">
+                                <img src="../mai/diplome (8).jpg" data-aos="flip-up"></a>
+
+                            <a href="../mai/diplome (9).jpg" target="_blank">
+                                <img src="../mai/diplome (9).jpg" data-aos="flip-up"></a>
+                            <a href="../mai/diplome (10).jpg" target="_blank">
+                                <img src="../mai/diplome (10).jpg" data-aos="flip-up"></a>
+                            <a href="../mai/diplome (11).jpg" target="_blank">
+                                <img src="../mai/diplome (11).jpg" data-aos="flip-up"></a>
+
+                            <a href="../mai/diplome (12).jpg" target="_blank">
+                                <img src="../mai/diplome (12).jpg" data-aos="flip-up"></a>
+                            <a href="../mai/diplome (13).jpg" target="_blank">
+                                <img src="../mai/diplome (13).jpg" data-aos="flip-up"></a>
+
+                            <a href="../mai/diplome (14).jpg" target="_blank">
+                                <img src="../mai/diplome (14).jpg" data-aos="flip-up"></a>
+                            <a href="../mai/diplome (15).jpg " target="_blank">
+                                <img src="../mai/diplome (15).jpg" data-aos="flip-up"></a>
+                            <a href="../mai/diplome (16)" target="_blank">
+                                <img src="../mai/diplome (16).jpg" data-aos="flip-up"></a>
+
+                            <a href="../mai/diplome (17).jpg" target="_blank">
+                                <img src="../mai/diplome (17).jpg" data-aos="flip-up"></a>
+                            <a href="../mai/diplome (18).jpg" target="_blank">
+                                <img src="../mai/diplome (18).jpg" data-aos="flip-up"></a>
+                            <a href="../mai/diplome (19).jpg" target="_blank">
+                                <img src="../mai/diplome (19).jpg" data-aos="flip-up"></a>
+
+                            <a href="../mai/diplome (20).jpg" target="_blank">
+                                <img src="../mai/diplome (20).jpg" data-aos="flip-up"></a>
+                            <a href="../mai/diplome (21).jpg" target="_blank">
+                                <img src="../mai/diplome (21).jpg" data-aos="flip-up"></a>
+
+                            <a href="../mai/diplome (22).jpg" target="_blank">
+                                <img src="../mai/diplome (22).jpg" data-aos="flip-up"></a>
+                            <a href="../mai/diplome (23).jpg" target="_blank">
+                                <img src="../mai/diplome (23).jpg" data-aos="flip-up"></a>
+                            <a href="../mai/diplome (24).jpg" target="_blank">
+                                <img src="../mai/diplome (24).jpg" data-aos="flip-up"></a>
+
+                        </details>
+
+
+
+                        <details>
+                            <summary class="centered">Arta în ochii elevilor în anul de studii 2022-2023</summary>
+
+                            <a href="../arta/a1 (1).jpg" target="_blank">
+                                <img src="../arta/a1 (1).jpg" data-aos="flip-up"></a>
+                            <a href="../arta/a1 (2).jpg " target="_blank">
+                                <img src="../arta/a1 (2).jpg" data-aos="flip-up"></a>
+                            <a href="../arta/a1 (3)" target="_blank">
+                                <img src="../arta/a1 (3).jpg" data-aos="flip-up"></a>
+
+                            <a href="../arta/a1 (4).jpg" target="_blank">
+                                <img src="../arta/a1 (4).jpg" data-aos="flip-up"></a>
+                            <a href="../arta/a1 (5).jpg" target="_blank">
+                                <img src="../arta/a1 (5).jpg" data-aos="flip-up"></a>
+                            <a href="../arta/a1 (6).jpg" target="_blank">
+                                <img src="../arta/a1 (6).jpg" data-aos="flip-up"></a>
+
+                            <a href="../arta/a1 (7).jpg" target="_blank">
+                                <img src="../arta/a1 (7).jpg" data-aos="flip-up"></a>
+                            <a href="../arta/a1 (8).jpg" target="_blank">
+                                <img src="../arta/a1 (8).jpg" data-aos="flip-up"></a>
+
+                            <a href="../arta/a1 (9).jpg" target="_blank">
+                                <img src="../arta/a1 (9).jpg" data-aos="flip-up"></a>
+                            <a href="../arta/a1 (10).jpg" target="_blank">
+                                <img src="../arta/a1 (10).jpg" data-aos="flip-up"></a>
+                            <a href="../arta/a1 (11).jpg" target="_blank">
+                                <img src="../arta/a1 (11).jpg" data-aos="flip-up"></a>
+
+                            <a href="../arta/a1 (12).jpg" target="_blank">
+                                <img src="../arta/a1 (12).jpg" data-aos="flip-up"></a>
+                            <a href="../arta/a1 (13).jpg" target="_blank">
+                                <img src="../arta/a1 (13).jpg" data-aos="flip-up"></a>
+
+                            <a href="../arta/a1 (14).jpg" target="_blank">
+                                <img src="../arta/a1 (14).jpg" data-aos="flip-up"></a>
+                            <a href="../arta/a1 (15).jpg " target="_blank">
+                                <img src="../arta/a1 (15).jpg" data-aos="flip-up"></a>
+                            <a href="../arta/a1 (16)" target="_blank">
+                                <img src="../arta/a1 (16).jpg" data-aos="flip-up"></a>
+
+                            <a href="../arta/a1 (17).jpg" target="_blank">
+                                <img src="../arta/a1 (17).jpg" data-aos="flip-up"></a>
+                            <a href="../arta/a1 (18).jpg" target="_blank">
+                                <img src="../arta/a1 (18).jpg" data-aos="flip-up"></a>
+                            <a href="../arta/a1 (19).jpg" target="_blank">
+                                <img src="../arta/a1 (19).jpg" data-aos="flip-up"></a>
+
+                            <a href="../arta/a1 (20).jpg" target="_blank">
+                                <img src="../arta/a1 (20).jpg" data-aos="flip-up"></a>
+                            <a href="../arta/a1 (21).jpg" target="_blank">
+                                <img src="../arta/a1 (21).jpg" data-aos="flip-up"></a>
+
+                            <a href="../arta/a1 (22).jpg" target="_blank">
+                                <img src="../arta/a1 (22).jpg" data-aos="flip-up"></a>
+                            <a href="../arta/a1 (23).jpg" target="_blank">
+                                <img src="../arta/a1 (23).jpg" data-aos="flip-up"></a>
+                            <a href="../arta/a1 (24).jpg" target="_blank">
+                                <img src="../arta/a1 (24).jpg" data-aos="flip-up"></a>
+
+                            <a href="../arta/a1 (25).jpg" target="_blank">
+                                <img src="../arta/a1 (25).jpg" data-aos="flip-up"></a>
+                            <a href="../arta/a1 (26).jpg" target="_blank">
+                                <img src="../arta/a1 (26).jpg" data-aos="flip-up"></a>
+
+
+                            <a href="../arta/a1 (27).jpg" target="_blank">
+                                <img src="../arta/a1 (27).jpg" data-aos="flip-up"></a>
+                            <a href="../arta/a1 (28).jpg" target="_blank">
+                                <img src="../arta/a1 (28).jpg" data-aos="flip-up"></a>
+
+                            <a href="../arta/a1 (29).jpg" target="_blank">
+                                <img src="../arta/a1 (29).jpg" data-aos="flip-up"></a>
+                            <a href="../arta/a1 (30).jpg" target="_blank">
+                                <img src="../arta/a1 (30).jpg" data-aos="flip-up"></a>
+                            <a href="../arta/a1 (31).jpg" target="_blank">
+                                <img src="../arta/a1 (31).jpg" data-aos="flip-up"></a>
+
+                            <a href="../arta/a1 (32).jpg" target="_blank">
+                                <img src="../arta/a1 (32).jpg" data-aos="flip-up"></a>
+                            <a href="../arta/a1 (33).jpg" target="_blank">
+                                <img src="../arta/a1 (33).jpg" data-aos="flip-up"></a>
+
+                            <a href="../arta/a1 (34).jpg" target="_blank">
+                                <img src="../arta/a1 (34).jpg" data-aos="flip-up"></a>
+
+                            <a href="../arta/a1 (35).jpg" target="_blank">
+                                <img src="../arta/a1 (35).jpg" data-aos="flip-up"></a>
+                            <a href="../arta/a1 (36).jpg" target="_blank">
+                                <img src="../arta/a1 (36).jpg" data-aos="flip-up"></a>
+                            <br>
+                        </details>
+
+                        <details>
+                            <summary class="centered">Ziua ușilor deschise</summary>
+
+                            <a href="../images6/ziua1.jpg" target="_blank">
+                                <img src="../images6/ziua1.jpg" data-aos="flip-up"></a>
+                            <a href="../images6/ziua2.jpg" target="_blank">
+                                <img src="../images6/ziua2.jpg" data-aos="flip-up"></a>
+                            <a href="../images6/ziua3.jpg" target="_blank">
+                                <img src="../images6/ziua3.jpg" data-aos="flip-up"></a>
+
+                            <a href="../images6/ziua4.jpg" target="_blank">
+                                <img src="../images6/ziua4.jpg" data-aos="flip-up"></a>
+                            <a href="../images6/ziua5.jpg" target="_blank">
+                                <img src="../images6/ziua5.jpg" data-aos="flip-up"></a>
+                            <a href="../images6/ziua6.jpg" target="_blank">
+                                <img src="../images6/ziua6.jpg" data-aos="flip-up"></a>
+
+                            <a href="../images6/ziua7.jpg" target="_blank">
+                                <img src="../images6/ziua7.jpg" data-aos="flip-up"></a>
+                            <a href="../images6/ziua8.jpg" target="_blank">
+                                <img src="../images6/ziua8.jpg" data-aos="flip-up"></a>
+
+                            <a href="../images6/ziua9.jpg" target="_blank">
+                                <img src="../images6/ziua9.jpg" data-aos="flip-up"></a>
+                            <a href="../images6/ziua10.jpg" target="_blank">
+                                <img src="../images6/ziua10.jpg" data-aos="flip-up"></a>
+                            <a href="../images6/ziua11.jpg" target="_blank">
+                                <img src="../images6/ziua11.jpg" data-aos="flip-up"></a>
+
+                            <a href="../images6/ziua12.jpg" target="_blank">
+                                <img src="../images6/ziua12.jpg" data-aos="flip-up"></a>
+                            <a href="../images6/ziua13.jpg" target="_blank">
+                                <img src="../images6/ziua13.jpg" data-aos="flip-up"></a>
+                            <br>
+                            <iframe width="360" height="315" src="https://www.youtube.com/embed/h2_DDJX67Vo"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+
+
+
+
+                        </details>
+
+
+                        <details>
+                            <summary class="centered">Festivalul Familiei</summary>
+
+                            <a href="../images6/fam1.jpg" target="_blank">
+                                <img src="../images6/fam1.jpg" data-aos="flip-up"></a>
+                            <a href="../images6/fam2.jpg" target="_blank">
+                                <img src="../images6/fam2.jpg" data-aos="flip-up"></a>
+                            <a href="../images6/fam3.jpg" target="_blank">
+                                <img src="../images6/fam3.jpg" data-aos="flip-up"></a>
+
+                            <a href="../images6/fam4.jpg" target="_blank">
+                                <img src="../images6/fam4.jpg" data-aos="flip-up"></a>
+                            <a href="../images6/fam5.jpg" target="_blank">
+                                <img src="../images6/fam5.jpg" data-aos="flip-up"></a>
+                            <a href="../images6/fam6.jpg" target="_blank">
+                                <img src="../images6/fam6.jpg" data-aos="flip-up"></a>
+
+                            <a href="../images6/fam7.jpg" target="_blank">
+                                <img src="../images6/fam7.jpg" data-aos="flip-up"></a>
+                            <a href="../images6/fam8.jpg" target="_blank">
+                                <img src="../images6/fam8.jpg" data-aos="flip-up"></a>
+
+                            <a href="../images6/fam9.jpg" target="_blank">
+                                <img src="../images6/fam9.jpg" data-aos="flip-up"></a>
+                            <a href="../images6/fam10.jpg" target="_blank">
+                                <img src="../images6/fam10.jpg" data-aos="flip-up"></a>
+                            <a href="../images6/fam11.jpg" target="_blank">
+                                <img src="../images6/fam11.jpg" data-aos="flip-up"></a>
+
+                            <a href="../images6/fam12.jpg" target="_blank">
+                                <img src="../images6/fam12.jpg" data-aos="flip-up"></a>
+                            <a href="../images6/fam13.jpg" target="_blank">
+                                <img src="../images6/fam13.jpg" data-aos="flip-up"></a>
+
+                            <a href="../images6/fam14.jpg" target="_blank">
+                                <img src="../images6/fam14.jpg" data-aos="flip-up"></a> <br>
+
+
+                            <iframe width="360" height="315" src="https://www.youtube.com/embed/BW1OGfMfVqQ"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                            <iframe width="360" height="315" src="https://www.youtube.com/embed/zFKD-pj61lY"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowfullscreen></iframe>
+                        </details>
+
+
+                        <details>
+                            <summary class="centered">Ședință cu părinții</summary>
+
+                            <a href="../images5/bogdan1.jpg" target="_blank">
+                                <img src="../images5/bogdan1.jpg" data-aos="flip-up"></a>
+                            <a href="../images5/bogdan2.jpg" target="_blank">
+                                <img src="../images5/bogdan2.jpg" data-aos="flip-up"></a>
+                            <a href="../images5/bogdan3.jpg" target="_blank">
+                                <img src="../images5/bogdan3.jpg" data-aos="flip-up"></a>
+
+                            <a href="../images5/bogdan4.jpg" target="_blank">
+                                <img src="../images5/bogdan4.jpg" data-aos="flip-up"></a>
+                            <a href="../images5/bogdan5.jpg" target="_blank">
+                                <img src="../images5/bogdan5.jpg" data-aos="flip-up"></a>
+                            <a href="../images5/bogdan6.jpg" target="_blank">
+                                <img src="../images5/bogdan6.jpg" data-aos="flip-up"></a>
+
+                            <a href="../images5/bogdan7.jpg" target="_blank">
+                                <img src="../images5/bogdan7.jpg" data-aos="flip-up"></a>
+                            <a href="../images5/bogdan8.jpg" target="_blank">
+                                <img src="../images5/bogdan8.jpg" data-aos="flip-up"></a>
+                            <a href="../images5/bogdan9.jpg" target="_blank">
+                                <img src="../images5/bogdan9.jpg" data-aos="flip-up"></a>
+                            <a href="../images5/bogdan10.jpg" target="_blank">
+                                <img src="../images5/bogdan10.jpg" data-aos="flip-up"></a>
+
+
+                        </details>
+                        <details>
+                            <summary class="centered">TVC de martie</summary>
+
+                            <a href="../images4/tvc1.jpg" target="_blank">
+                                <img src="../images4/tvc1.jpg" data-aos="flip-up"></a>
+                            <a href="../images4/tvc2.jpg" target="_blank">
+                                <img src="../images4/tvc2.jpg" data-aos="flip-up"></a>
+                            <a href="../images4/tvc3.jpg" target="_blank">
+                                <img src="../images4/tvc3.jpg" data-aos="flip-up"></a>
+
+                            <a href="../images4/tvc5.jpg" target="_blank">
+                                <img src="../images4/tvc5.jpg" data-aos="flip-up"></a>
+                            <a href="../images4/tvc6.jpg" target="_blank">
+                                <img src="../images4/tvc6.jpg" data-aos="flip-up"></a>
+                            <a href="../images4/tvc7.jpg" target="_blank">
+                                <img src="../images4/tvc7.jpg" data-aos="flip-up"></a>
+
+
+                        </details>
+
+
+                        <details>
+                            <summary class="centered">Decembrie solidar</summary>
+
+
+                            <a href="../images4/g1.jpg" target="_blank">
+                                <img src="../images4/g1.jpg" data-aos="flip-up"></a>
+                            <a href="../images4/g2.jpg" target="_blank">
+                                <img src="../images4/g2.jpg" data-aos="flip-up"></a>
+                            <a href="../images4/g3.jpg" target="_blank">
+                                <img src="../images4/g3.jpg" data-aos="flip-up"></a>
+                            <a href="../images4/g12.jpg" target="_blank">
+                                <img src="../images4/g12.jpg" data-aos="flip-up"></a>
+                            <a href="../images4/g5.jpg" target="_blank">
+                                <img src="../images4/g5.jpg" data-aos="flip-up"></a>
+                            <a href="../images4/g6.jpg" target="_blank">
+                                <img src="../images4/g6.jpg" data-aos="flip-up"></a>
+                            <a href="../images4/g7.jpg" target="_blank">
+                                <img src="../images4/g7.jpg" data-aos="flip-up"></a>
+                            <a href="../images4/g8.jpg" target="_blank">
+                                <img src="../images4/g8.jpg" data-aos="flip-up"></a>
+                            <a href="../images4/g9.jpg" target="_blank">
+                                <img src="../images4/g9.jpg" data-aos="flip-up"></a>
+                            <a href="../images4/g10.jpg" target="_blank">
+                                <img src="../images4/g10.jpg" data-aos="flip-up"></a>
+                            <a href="../images4/g11.jpg" target="_blank">
+                                <img src="../images4/g11.jpg" data-aos="flip-up"></a>
+                            <a href="../images4/sa1.jpg" target="_blank">
+                                <img src="../images4/sa1.jpg" data-aos="flip-up"></a>
+                            <a href="../images4/sa2.jpg" target="_blank">
+                                <img src="../images4/sa2.jpg" data-aos="flip-up"></a>
+                            <a href="../images4/sa3.jpg" target="_blank">
+                                <img src="../images4/sa3.jpg" data-aos="flip-up"></a>
+                            <a href="../images4/sa4.jpg" target="_blank">
+                                <img src="../images4/sa4.jpg" data-aos="flip-up"></a>
+
+
+
+                        </details>
+
+                        <details>
+                            <summary class="centered">Competiții din decembrie</summary>
+
+                            <a href="../images4/sport.jpg" target="_blank">
+                                <img src="../images4/sport.jpg" data-aos="flip-up"></a>
+                            <a href="../images4/sport2.jpg" target="_blank">
+                                <img src="../images4/sport2.jpg" data-aos="flip-up"></a>
+                            <a href="../images4/sport3.jpg" target="_blank">
+                                <img src="../images4/sport3.jpg" data-aos="flip-up"></a>
+                            <a href="../images4/sport4.jpg" target="_blank">
+                                <img src="../images4/sport4.jpg" data-aos="flip-up"></a>
+                            <a href="../images4/sport5.jpg" target="_blank">
+                                <img src="../images4/sport5.jpg" data-aos="flip-up"></a>
+
+
+                        </details>
+
+
+                        <details>
+                            <summary class="centered"> Ziua Mondială a Toleranței</summary>
+
+
+                            <a href="../images3/toleranta (1).jpg" target="_blank">
+                                <img src="../images3/toleranta (1).jpg" data-aos="flip-up"></a>
+                            <a href="../images3/toleranta (2).jpg" target="_blank">
+                                <img src="../images3/toleranta (2).jpg" data-aos="flip-up"></a>
+                            <a href="../images3/toleranta (3).jpg" target="_blank">
+                                <img src="../images3/toleranta (3).jpg" data-aos="flip-up"></a>
+                            <a href="../images3/toleranta (4).jpg" target="_blank">
+                                <img src="../images3/toleranta (4).jpg" data-aos="flip-up"></a>
+                            <a href="../images3/toleranta (5).jpg" target="_blank">
+                                <img src="../images3/toleranta (5).jpg" data-aos="flip-up"></a>
+                            <a href="../images3/toleranta (6).jpg" target="_blank">
+                                <img src="../images3/toleranta (6).jpg" data-aos="flip-up"></a>
+                            <a href="../images3/toleranta (7).jpg" target="_blank">
+                                <img src="../images3/toleranta (7).jpg" data-aos="flip-up"></a>
+                            <a href="../images3/toleranta (8).jpg" target="_blank">
+                                <img src="../images3/toleranta (8).jpg" data-aos="flip-up"></a>
+                            <a href="../images3/toleranta (9).jpg" target="_blank">
+                                <img src="../images3/toleranta (9).jpg" data-aos="flip-up"></a>
+
+                            <a href="../images3/toleranta (16).jpg" target="_blank">
+                                <img src="../images3/toleranta (16).jpg" data-aos="flip-up"></a>
+                            <a href="../images3/toleranta (17).jpg" target="_blank">
+                                <img src="../images3/toleranta (17).jpg" data-aos="flip-up"></a>
+
+                            <a href="../images3/toleranta (10).jpg" target="_blank">
+                                <img src="../images3/toleranta (10).jpg" data-aos="flip-up"></a>
+                            <a href="../images3/toleranta (13).jpg" target="_blank">
+                                <img src="../images3/toleranta (13).jpg" data-aos="flip-up"></a>
+                            <a href="../images3/toleranta (14).jpg" target="_blank">
+                                <img src="../images3/toleranta (14).jpg" data-aos="flip-up"></a>
+                            <a href="../images3/toleranta (15).jpg" target="_blank">
+                                <img src="../images3/toleranta (15).jpg" data-aos="flip-up"></a>
+
+                            <a href="../images3/toleranta (12).jpg" target="_blank">
+                                <img src="../images3/toleranta (12).jpg" data-aos="flip-up"></a>
+
+                        </details>
+
+                        <details>
+                            <summary class="centered"> În Târgul lui Noiembrie</summary>
+
+
+                            <a href="../images3/targ1.jpg" target="_blank">
+                                <img src="../images3/targ1.jpg" data-aos="flip-up"></a>
+                            <a href="../images3/targ (2).jpg" target="_blank">
+                                <img src="../images3/targ (2).jpg" data-aos="flip-up"></a>
+                            <a href="../images3/targ (3).jpg" target="_blank">
+                                <img src="../images3/targ (3).jpg" data-aos="flip-up"></a>
+                            <a href="../images3/targ (4).jpg" target="_blank">
+                                <img src="../images3/targ (4).jpg" data-aos="flip-up"></a>
+                            <a href="../images3/targ (5).jpg" target="_blank">
+                                <img src="../images3/targ (5).jpg" data-aos="flip-up"></a>
+                            <a href="../images3/targ (6).jpg" target="_blank">
+                                <img src="../images3/targ (6).jpg" data-aos="flip-up"></a>
+                            <a href="../images3/targ (7).jpg" target="_blank">
+                                <img src="../images3/targ (7).jpg" data-aos="flip-up"></a>
+                            <a href="../images3/targ (8).jpg" target="_blank">
+                                <img src="../images3/targ (8).jpg" data-aos="flip-up"></a>
+                            <a href="../images3/targ (9).jpg" target="_blank">
+                                <img src="../images3/targ (9).jpg" data-aos="flip-up"></a>
+
+
+                            <a href="../images3/targ (20).jpg" target="_blank">
+                                <img src="../images3/targ (20).jpg" data-aos="flip-up"></a>
+                            <a href="../images3/targ (21).jpg" target="_blank">
+                                <img src="../images3/targ (21).jpg" data-aos="flip-up"></a>
+                            <a href="../images3/targ (22).jpg" target="_blank">
+                                <img src="../images3/targ (22).jpg" data-aos="flip-up"></a>
+                            <a href="../images3/targ (23).jpg" target="_blank">
+                                <img src="../images3/targ (23).jpg" data-aos="flip-up"></a>
+                            <a href="../images3/targ (16).jpg" target="_blank">
+                                <img src="../images3/targ (16).jpg" data-aos="flip-up"></a>
+                            <a href="../images3/targ (17).jpg" target="_blank">
+                                <img src="../images3/targ (17).jpg" data-aos="flip-up"></a>
+                            <a href="../images3/targ (18).jpg" target="_blank">
+                                <img src="../images3/targ (18).jpg" data-aos="flip-up"></a>
+                            <a href="../images3/targ (19).jpg" target="_blank">
+                                <img src="../images3/targ (19).jpg" data-aos="flip-up"></a>
+                            <a href="../images3/targ (10).jpg" target="_blank">
+                                <img src="../images3/targ (10).jpg" data-aos="flip-up"></a>
+                            <a href="../images3/targ (13).jpg" target="_blank">
+                                <img src="../images3/targ (13).jpg" data-aos="flip-up"></a>
+                            <a href="../images3/targ (14).jpg" target="_blank">
+                                <img src="../images3/targ (14).jpg" data-aos="flip-up"></a>
+                            <a href="../images3/targ (15).jpg" target="_blank">
+                                <img src="../images3/targ (15).jpg" data-aos="flip-up"></a>
+                            <a href="../images3/targ (26).jpg" target="_blank">
+                                <img src="../images3/targ (26).jpg" data-aos="flip-up"></a>
+                            <a href="../images3/targ (27).jpg" target="_blank">
+                                <img src="../images3/targ (27).jpg" data-aos="flip-up"></a>
+                            <a href="../images3/targ (28).jpg" target="_blank">
+                                <img src="../images3/targ (28).jpg" data-aos="flip-up"></a>
+                            <a href="../images3/targ (29).jpg" target="_blank">
+                                <img src="../images3/targ (29).jpg" data-aos="flip-up"></a>
+                            <a href="../images3/targ (12).jpg" target="_blank">
+                                <img src="../images3/targ (12).jpg" data-aos="flip-up"></a>
+                            <a href="../images3/targ (30).jpg" target="_blank">
+                                <img src="../images3/targ (30).jpg" data-aos="flip-up"></a>
+                            <a href="../images3/targ (34).jpg" target="_blank">
+                                <img src="../images3/targ (34).jpg" data-aos="flip-up"></a>
+                            <a href="../images3/targ (35).jpg" target="_blank">
+                                <img src="../images3/targ (35).jpg" data-aos="flip-up"></a>
+                            <a href="../images3/targ (36).jpg" target="_blank">
+                                <img src="../images3/targ (36).jpg" data-aos="flip-up"></a>
+                            <a href="../images3/targ (37).jpg" target="_blank">
+                                <img src="../images3/targ (37).jpg" data-aos="flip-up"></a>
+                            <a href="../images3/zi (1).jpg" target="_blank">
+                                <img src="../images3/zi (1).jpg" data-aos="flip-up"></a>
+
+                            <a href="../images3/zi (3).jpg" target="_blank">
+                                <img src="../images3/zi (3).jpg" data-aos="flip-up"></a>
+
+                            <a href="../images3/zi (5).jpg" target="_blank">
+                                <img src="../images3/zi (5).jpg" data-aos="flip-up"></a>
+
+                            <a href="../images3/zi (7).jpg" target="_blank">
+                                <img src="../images3/zi (7).jpg" data-aos="flip-up"></a>
+
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/vI8HStwvwYc"
+                                title="YouTube video player" frameborder="0"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+
+
+                        </details>
+
+                        <div class="detail container-galerie">
+
+                            <details>
+                                <summary class="centered">Simulare de evacuare</summary>
+
+                                <a href="../images3/foc (1).jpg" target="_blank">
+                                    <img src="../images3/foc (1).jpg" data-aos="flip-up"></a>
+                                <a href="../images3/foc (2).jpg" target="_blank">
+                                    <img src="../images3/foc (2).jpg" data-aos="flip-up"></a>
+                                <a href="../images3/foc (3).jpg" target="_blank">
+                                    <img src="../images3/foc (3).jpg" data-aos="flip-up"></a>
+                                <a href="../images3/foc (4).jpg" target="_blank">
+                                    <img src="../images3/foc (4).jpg" data-aos="flip-up"></a>
+                                <a href="../images3/foc (5).jpg" target="_blank">
+                                    <img src="../images3/foc (5).jpg" data-aos="flip-up"></a>
+                                <a href="../images3/foc (6).jpg" target="_blank">
+                                    <img src="../images3/foc (6).jpg" data-aos="flip-up"></a>
+                                <a href="../images3/foc (7).jpg" target="_blank">
+                                    <img src="../images3/foc (7).jpg" data-aos="flip-up"></a>
+                                <a href="../images3/foc (8).jpg" target="_blank">
+                                    <img src="../images3/foc (8).jpg" data-aos="flip-up"></a>
+                                <a href="../images3/foc (9).jpg" target="_blank">
+                                    <img src="../images3/foc (9).jpg" data-aos="flip-up"></a>
+                                <iframe width="560" height="315" src="https://www.youtube.com/embed/XQmUL_Fc8A4"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+
+
+                            </details>
+
+                            <details>
+                                <summary class="centered">Training: Prevenirea comportamentului delicvent”</summary>
+
+                                <a href="../images3/ces1.jpg" target="_blank">
+                                    <img src="../images3/ces1.jpg" data-aos="flip-up"></a>
+                                <a href="../images3/ces2.jpg" target="_blank">
+                                    <img src="../images3/ces2.jpg" data-aos="flip-up"></a>
+                                <a href="../images3/ces3.jpg" target="_blank">
+                                    <img src="../images3/ces3.jpg" data-aos="flip-up"></a>
+                                <a href="../images3/ces4.jpg" target="_blank">
+                                    <img src="../images3/ces4.jpg" data-aos="flip-up"></a>
+                                <a href="../images3/ces5.jpg" target="_blank">
+                                    <img src="../images3/ces5.jpg" data-aos="flip-up"></a>
+                                <a href="../images3/ces6.jpg" target="_blank">
+                                    <img src="../images3/ces6.jpg" data-aos="flip-up"></a>
+                                <a href="../images3/ces7.jpg" target="_blank">
+                                    <img src="../images3/ces7.jpg" data-aos="flip-up"></a>
+
+
+                            </details>
+                            <details>
+                                <summary class="centered">Ziua autoconducerii - 5 octomrie</summary>
+                                <a href="../images3/5oct.jpg" target="_blank">
+                                    <img src="../images3/5oct.jpg" data-aos="flip-up"></a>
+                                <a href="../images3/5oct1.jpg" target="_blank">
+                                    <img src="../images3/5oct1.jpg" data-aos="flip-up"></a>
+                                <a href="../images3/5oct2.jpg" target="_blank">
+                                    <img src="../images3/5oct2.jpg" data-aos="flip-up"></a>
+                                <a href="../images3/5oct3.jpg" target="_blank">
+                                    <img src="../images3/5oct3.jpg" data-aos="flip-up"></a>
+                                <a href="../images3/5oct4.jpg" target="_blank">
+                                    <img src="../images3/5oct4.jpg" data-aos="flip-up"></a>
+                                <a href="../images3/5oct7.jpg" target="_blank">
+                                    <img src="../images3/5oct7.jpg" data-aos="flip-up"></a>
+                                <a href="../images3/5oct6.jpg" target="_blank">
+                                    <img src="../images3/5oct6.jpg" data-aos="flip-up"></a>
+                                <a href="../images3/5oct8.jpg" target="_blank">
+                                    <img src="../images3/5oct8.jpg" data-aos="flip-up"></a>
+                                <a href="../images3/5oct10.jpg" target="_blank">
+                                    <img src="../images3/5oct10.jpg" data-aos="flip-up"></a>
+                                <a href="../images3/5oct11.jpg" target="_blank">
+                                    <img src="../images3/5oct11.jpg" data-aos="flip-up"></a>
+                                <a href="../images3/5oct12.jpg" target="_blank">
+                                    <img src="../images3/5oct12.jpg" data-aos="flip-up"></a>
+                                <a href="../images3/5oct13.jpg" target="_blank">
+                                    <img src="../images3/5oct13.jpg" data-aos="flip-up"></a>
+                                <a href="../images3/5oct14.jpg" target="_blank">
+                                    <img src="../images3/5oct14.jpg" data-aos="flip-up"></a>
+                                <a href="../images3/5oct17.jpg" target="_blank">
+                                    <img src="../images3/5oct17.jpg" data-aos="flip-up"></a>
+                                <a href="../images3/5oct16.jpg" target="_blank">
+                                    <img src="../images3/5oct16.jpg" data-aos="flip-up"></a>
+                                <a href="../images3/5oct18.jpg" target="_blank">
+                                    <img src="../images3/5oct18.jpg" data-aos="flip-up"></a>
+                                <a href="../images3/5oct15.jpg" target="_blank">
+                                    <img src="../images3/5oct15.jpg" data-aos="flip-up"></a>
+                            </details>
+
+
+
+
+
+                            <details>
+                                <summary class="centered">Conferința Pedagogică</summary>
+                                <a href="../conferinta/imag1.jpg" target="_blank">
+                                    <img src="../conferinta/imag1.jpg" data-aos="flip-up"></a>
+                                <a href="../conferinta/imag2.jpg" target="_blank">
+                                    <img src="../conferinta/imag2.jpg" data-aos="flip-up"></a>
+                                <a href="../conferinta/imag3.jpg" target="_blank">
+                                    <img src="../conferinta/imag3.jpg" data-aos="flip-up"></a>
+                                <a href="../conferinta/imag4.jpg" target="_blank">
+                                    <img src="../conferinta/imag4.jpg" data-aos="flip-up"></a>
+                                <a href="../conferinta/imag5.jpg" target="_blank">
+                                    <img src="../conferinta/imag5.jpg" data-aos="flip-up"></a>
+                                <a href="../conferinta/imag6.jpg" target="_blank">
+                                    <img src="../conferinta/imag6.jpg" data-aos="flip-up"></a>
+                                <a href="../conferinta/imag7.jpg" target="_blank">
+                                    <img src="../conferinta/imag7.jpg" data-aos="flip-up"></a>
+                                <a href="../conferinta/imag8.jpg" target="_blank">
+                                    <img src="../conferinta/imag8.jpg" data-aos="flip-up"></a>
+
+                                <a href="../conferinta/imag10.jpg" target="_blank">
+                                    <img src="../conferinta/imag10.jpg" data-aos="flip-up"></a>
+                            </details>
+
+                            <details>
+                                <summary class="centered">Activitățile lunii mai</summary>
+                                <a href="../images2/pompieri.jpg" target="_blank">
+                                    <img src="../images2/pompieri.jpg" data-aos="flip-up"></a>
+                                <a href="../images2/pom2.jpg" target="_blank">
+                                    <img src="../images2/pom2.jpg" data-aos="flip-up"></a>
+                                <a href="../images2/pom3.jpg" target="_blank">
+                                    <img src="../images2/pom3.jpg" data-aos="flip-up"></a>
+                                <a href="../images2/pom4.jpg" target="_blank">
+                                    <img src="../images2/pom4.jpg" data-aos="flip-up"></a>
+                                <a href="../images2/pom5.jpg" target="_blank">
+                                    <img src="../images2/pom5.jpg" data-aos="flip-up"></a>
+                                <a href="../images2/pom6.jpg" target="_blank">
+                                    <img src="../images2/pom6.jpg" data-aos="flip-up"></a>
+                                <a href="../images2/pom7.jpg" target="_blank">
+                                    <img src="../images2/pom7.jpg" data-aos="flip-up"></a>
+                                <a href="../images2/pom8.jpg" target="_blank">
+                                    <img src="../images2/pom8.jpg" data-aos="flip-up"></a>
+                                <a href="../images2/pom9.jpg" target="_blank">
+                                    <img src="../images2/pom9.jpg" data-aos="flip-up"></a>
+                                <a href="../images2/pom10.jpg" target="_blank">
+                                    <img src="../images2/pom10.jpg" data-aos="flip-up"></a>
+                            </details>
+
+                            <details>
+                                <summary class="centered">Bucurii de Paști</summary>
+
+                                <a href="../tek/pasti.jpg" target="_blank">
+                                    <img src="../tek/pasti.jpg" data-aos="flip-up"></a>
+                                <a href="../tek/pasti1.jpg" target="_blank">
+                                    <img src="../tek/pasti1.jpg" data-aos="flip-up"></a>
+                                <a href="../tek/pasti2.jpg" target="_blank">
+                                    <img src="../tek/pasti2.jpg" data-aos="flip-up"></a>
+                                <a href="../tek/pasti3.jpg" target="_blank">
+                                    <img src="../tek/pasti3.jpg" data-aos="flip-up"></a>
+
+
+                            </details>
+
+
+                            <details>
+                                <summary class="centered">Junior Ambassadors”</summary>
+
+                                <a href="../tek/tek1.jpg" target="_blank">
+                                    <img src="../tek/tek1.jpg" data-aos="flip-up"></a>
+                                <a href="../tek/tek2.jpg" target="_blank">
+                                    <img src="../tek/tek2.jpg" data-aos="flip-up"></a>
+                                <a href="../tek/tek3.jpg" target="_blank">
+                                    <img src="../tek/tek3.jpg" data-aos="flip-up"></a>
+                                <a href="../tek/tek4.jpg" target="_blank">
+                                    <img src="../tek/tek4.jpg" data-aos="flip-up"></a>
+                                <a href="../tek/tek5.jpg" target="_blank">
+                                    <img src="../tek/tek5.jpg" data-aos="flip-up"></a>
+                                <a href="../tek/tek6.jpg" target="_blank">
+                                    <img src="../tek/tek6.jpg" data-aos="flip-up"></a>
+                                <a href="../tek/tek7.jpg" target="_blank">
+                                    <img src="../tek/tek7.jpg" data-aos="flip-up"></a>
+                                <a href="../tek/tek8.jpg" target="_blank">
+                                    <img src="../tek/tek8.jpg" data-aos="flip-up"></a>
+                                <a href="../tek/tek9.jpg" target="_blank">
+                                    <img src="../tek/tek9.jpg" data-aos="flip-up"></a>
+                                <a href="../tek/tek10.jpg" target="_blank">
+                                    <img src="../tek/tek10.jpg" data-aos="flip-up"></a>
+
+                            </details>
+
+                            <details>
+                                <summary class="centered">Competiții de dans</summary>
+
+                                <a href="../sintov/sport15.jpg" target="_blank">
+                                    <img src="../sintov/sport15.jpg" data-aos="flip-up"></a>
+                                <a href="../sintov/sport1.jpg" target="_blank">
+                                    <img src="../sintov/sport1.jpg" data-aos="flip-up"></a>
+                                <a href="../sintov/sport2.jpg" target="_blank">
+                                    <img src="../sintov/sport2.jpg" data-aos="flip-up"></a>
+                                <a href="../sintov/sport3.jpg" target="_blank">
+                                    <img src="../sintov/sport3.jpg" data-aos="flip-up"></a>
+                                <a href="../sintov/sport1.jpg/4.jpg" target="_blank">
+                                    <img src="../sintov/sport4.jpg" data-aos="flip-up"></a>
+                                <a href="../sintov/sport5.jpg" target="_blank">
+                                    <img src="../sintov/sport5.jpg" data-aos="flip-up"></a>
+                                <a href="../sintov/sport6.jpg" target="_blank">
+                                    <img src="../sintov/sport6.jpg" data-aos="flip-up"></a>
+                                <a href="../sintov/sport7.jpg" target="_blank">
+                                    <img src="../sintov/sport7.jpg" data-aos="flip-up"></a>
+                                <a href="../sintov/sport8.jpg" target="_blank">
+                                    <img src="../sintov/sport8.jpg" data-aos="flip-up"></a>
+                                <a href="../sintov/sport9.jpg" target="_blank">
+                                    <img src="../sintov/sport9.jpg" data-aos="flip-up"></a>
+                                <a href="../sintov/sport10.jpg" target="_blank">
+                                    <img src="../sintov/sport10.jpg" data-aos="flip-up"></a>
+                                <a href="../sintov/sport11.jpg" target="_blank">
+                                    <img src="../sintov/sport11.jpg" data-aos="flip-up"></a>
+                                <a href="../sintov/sport12.jpg" target="_blank">
+                                    <img src="../sintov/sport12.jpg" data-aos="flip-up"></a>
+                                <a href="../sintov/sport13.jpg" target="_blank">
+                                    <img src="../sintov/sport13.jpg" data-aos="flip-up"></a>
+                                <a href="../sintov/sport14.jpg" target="_blank">
+                                    <img src="../sintov/sport14.jpg" data-aos="flip-up"></a>
+
+                            </details>
+
+
+                            <details>
+                                <summary class="centered">Profesor Merituos</summary>
+
+                                <a href="../merituos/tighineanu.jpg" target="_blank">
+                                    <img src="../merituos/tighineanu.jpg" data-aos="flip-up"></a>
+                                <a href="../merituos/tighineanu2.jpg" target="_blank">
+                                    <img src="../merituos/tighineanu2.jpg" data-aos="flip-up"></a>
+                                <a href="../merituos/tighineanu3.jpg" target="_blank">
+                                    <img src="../merituos/tighineanu3.jpg" data-aos="flip-up"></a>
+                                <a href="../merituos/tighineanu4.jpg" target="_blank">
+                                    <img src="../merituos/tighineanu4.jpg" data-aos="flip-up"></a>
+                                <a href="../merituos/tighineanu5.jpg" target="_blank">
+                                    <img src="../merituos/tighineanu5.jpg" data-aos="flip-up"></a>
+                                <a href="../merituos/tighineanu6.jpg" target="_blank">
+                                    <img src="../merituos/tighineanu6.jpg" data-aos="flip-up"></a>
+                                <a href="../merituos/tighineanu7.jpg" target="_blank">
+                                    <img src="../merituos/tighineanu7.jpg" data-aos="flip-up"></a>
+                                <a href="../merituos/tighineanu8.jpg" target="_blank">
+                                    <img src="../merituos/tighineanu8.jpg" data-aos="flip-up"></a>
+                                <a href="../merituos/tighineanu9.jpg" target="_blank">
+                                    <img src="../merituos/tighineanu9.jpg" data-aos="flip-up"></a>
+                                <a href="../merituos/tighineanu10.jpg" target="_blank">
+                                    <img src="../merituos/tighineanu10.jpg" data-aos="flip-up"></a>
+                                <a href="../merituos/tighineanu11.jpg" target="_blank">
+                                    <img src="../merituos/tighineanu11.jpg" data-aos="flip-up"></a>
+                                <a href="../merituos/tighineanu12.jpg" target="_blank">
+                                    <img src="../merituos/tighineanu12.jpg" data-aos="flip-up"></a>
+                                <a href="../merituos/tighineanu13.jpg" target="_blank">
+                                    <img src="../merituos/tighineanu13.jpg" data-aos="flip-up"></a>
+
+                            </details>
+
+
+
+                            <details>
+                                <summary class="centered">Martie 2022</summary>
+                                <a href="../images2/mostenitorii.jpg" target="_blank">
+                                    <img src="../images2/mostenitorii.jpg" data-aos="flip-up"></a>
+                                <a href="../images2/sport2.jpg" target="_blank">
+                                    <img src="../images2/sport2.jpg" data-aos="flip-up"></a>
+                                <a href="../images2/sport.jpg" target="_blank">
+                                    <img src="../images2/sport.jpg" data-aos="flip-up"></a>
+                                <a href="../images2/sport3.jpg" target="_blank">
+                                    <img src="../images2/sport3.jpg" data-aos="flip-up"></a>
+
+                                <a href="../images/pace.jpg" target="_blank">
+                                    <img src="../images/pace.jpg" data-aos="flip-up"></a>
+                                <a href="../images/pace2.jpg" target="_blank">
+                                    <img src="../images/pace2.jpg" data-aos="flip-up"></a>
+                                <a href="../images/1martie.jpg" target="_blank">
+                                    <img src="../images/1martie.jpg" data-aos="flip-up"></a>
+                                <a href="../images/1martie2.jpg" target="_blank">
+                                    <img src="../images/1martie2.jpg" data-aos="flip-up"></a>
+                                <a href="../images/1martie3.jpg" target="_blank">
+                                    <img src="../images/1martie3.jpg" data-aos="flip-up"></a>
+                                <a href="../images/1martie4.jpg" target="_blank">
+                                    <img src="../images/1martie4.jpg" data-aos="flip-up"></a>
+                                <a href="../images/1martie5.jpg" target="_blank">
+                                    <img src="../images/1martie5.jpg" data-aos="flip-up"></a>
+                                <a href="../images/1martie6.jpg" target="_blank">
+                                    <img src="../images/1martie6.jpg" data-aos="flip-up"></a>
+
+                                <a href="../images/crsmartie.jpg" target="_blank">
+                                    <img src="../images/crsmartie.jpg" data-aos="flip-up"></a>
+                                <a href="../images/crsmartie2.jpg" target="_blank">
+                                    <img src="../images/crsmartie2.jpg" data-aos="flip-up"></a>
+
+                                <a href="../images/crsmartie3.jpg" target="_blank">
+                                    <img src="../images/crsmartie3.jpg" data-aos="flip-up"></a>
+                                <a href="../images/crmartie4.jpg" target="_blank">
+                                    <img src="../images/crsmartie4.jpg" data-aos="flip-up"></a>
+                                <a href="../images/crmartie5.jpg" target="_blank">
+                                    <img src="../images/crsmartie5.jpg" data-aos="flip-up"></a>
+                                <a href="../images/crsmartie6.jpg" target="_blank">
+                                    <img src="../images/crsmartie6.jpg" data-aos="flip-up"></a>
+
+                                <a href="../images/corpdidactic.jpg" target="_blank">
+                                    <img src="../images/corpdidactic.jpg" data-aos="flip-up"></a>
+
+
+                            </details>
+                            <details>
+                                <summary class="centered">Decembrie 2021</summary>
+
+                                <a href="../bostaniada/decembrie/mos.jpg" target="_blank">
+                                    <img src="../bostaniada/decembrie/mos.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/decembrie/mos1.jpg" target="_blank">
+                                    <img src="../bostaniada/decembrie/mos1.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/decembrie/mos2.jpg" target="_blank">
+                                    <img src="../bostaniada/decembrie/mos2.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/decembrie/galeata1.jpg" target="_blank">
+                                    <img src="../bostaniada/decembrie/galeata1.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/decembrie/galeata2.jpg" target="_blank">
+                                    <img src="../bostaniada/decembrie/galeata2.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/decembrie/galeata3.jpg" target="_blank">
+                                    <img src="../bostaniada/decembrie/galeata3.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/decembrie/galeata4.jpg" target="_blank">
+                                    <img src="../bostaniada/decembrie/galeata4.jpg" data-aos="flip-up"></a>
+                                <a href="../images/decembrie/ge.jpg" target="_blank">
+                                    <img src="../images/ge.jpg" data-aos="flip-up"></a>
+                                <a href="../images/ge1.jpg" target="_blank">
+                                    <img src="../images/ge1.jpg" data-aos="flip-up"></a>
+                                <a href="../images/ge2.jpg" target="_blank">
+                                    <img src="../images/ge2.jpg" data-aos="flip-up"></a>
+
+
+                                <div class="row">
+                                    <div class="col-50 video">
+                                        <iframe width="100%" height="315"
+                                            src="https://www.youtube.com/embed/9dePBvKN6kg" title="YouTube video player"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+
+                                    </div>
+
+
+                                    <div class="col-50 video">
+                                        <iframe width="100%" height="315"
+                                            src="https://www.youtube.com/embed/EfqtuKEfJyA" title="YouTube video player"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+
+                                    </div>
+
+                                    <div class="col-50 video">
+                                        <iframe width="100%" height="315"
+                                            src="https://www.youtube.com/embed/F-hdv9GTBS4" title="YouTube video player"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+
+                                    </div>
+                                    <div class="col-50 video">
+                                        <iframe width="100%" height="315"
+                                            src="https://www.youtube.com/embed/9qdUQpnxjzQ" title="YouTube video player"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+
+                                    </div>
+                                    <div class="col-50 video">
+                                        <iframe width="100%" height="315"
+                                            src="https://www.youtube.com/embed/3dZTizMyTJk" title="YouTube video player"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+
+
+                                    <div class="col-50 video">
+                                        <iframe width="100%" height="315"
+                                            src="https://www.youtube.com/embed/tmPRMHxKPBI" title="YouTube video player"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+
+                                    <div class="col-50 video">
+                                        <iframe width="100%" height="315"
+                                            src="https://www.youtube.com/embed/wMgqvXMUpWY" title="YouTube video player"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+                                    <div class="col-50 video">
+                                        <iframe width="100%" height="315"
+                                            src="https://www.youtube.com/embed/S0i0FA8rXPs" title="YouTube video player"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+
+                                    <div class="col-50 video">
+                                        <iframe width="100%" height="315"
+                                            src="https://www.youtube.com/embed/XGOo6PhHHQk" title="YouTube video player"
+                                            frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                            allowfullscreen></iframe>
+                                    </div>
+
+                            </details>
+
+
+                            <details>
+                                <summary class="centered">Evenimente și emoții de Noiembrie</summary>
+
+                                <a href="../bostaniada/rusa/r1.jpg" target="_blank">
+                                    <img src="../bostaniada/rusa/r1.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/rusa/r2.jpg" target="_blank">
+                                    <img src="../bostaniada/rusa/r2.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/rusa/r3.jpg" target="_blank">
+                                    <img src="../bostaniada/rusa/r3.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/rusa/r4.jpg" target="_blank">
+                                    <img src="../bostaniada/rusa/r4.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/rusa/r5.jpg" target="_blank">
+                                    <img src="../bostaniada/rusa/r5.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/rusa/edplast.jpg" target="_blank">
+                                    <img src="../bostaniada/rusa/edplast.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/rusa/eng1.jpg" target="_blank">
+                                    <img src="../bostaniada/rusa/eng1.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/rusa/eng2.jpg" target="_blank">
+                                    <img src="../bostaniada/rusa/eng2.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/rusa/eng3.jpg" target="_blank">
+                                    <img src="../bostaniada/rusa/eng3.jpg" data-aos="flip-up"></a>
+
+                                <a href="../bostaniada/rusa/eng4.jpg" target="_blank">
+                                    <img src="../bostaniada/rusa/eng4.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/rusa/eng5.jpg" target="_blank">
+                                    <img src="../bostaniada/rusa/eng5.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/rusa/eng6.jpg" target="_blank">
+                                    <img src="../bostaniada/rusa/eng6.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/rusa/eng7.jpg" target="_blank">
+                                    <img src="../bostaniada/rusa/eng7.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/rusa/eng8.jpg" target="_blank">
+                                    <img src="../bostaniada/rusa/eng8.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/rusa/eng9.jpg" target="_blank">
+                                    <img src="../bostaniada/rusa/eng9.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/rusa/eng10.jpg" target="_blank">
+                                    <img src="../bostaniada/rusa/eng10.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/rusa/eng11.jpg" target="_blank">
+                                    <img src="../bostaniada/rusa/eng11.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/rusa/eng12.jpg" target="_blank">
+                                    <img src="../bostaniada/rusa/eng12.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/rusa/dorin.jpg" target="_blank">
+                                    <img src="../bostaniada/rusa/dorin.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/rusa/dorin1.jpg" target="_blank">
+                                    <img src="../bostaniada/rusa/dorin1.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/rusa/dorin2.jpg" target="_blank">
+                                    <img src="../bostaniada/rusa/dorin2.jpg" data-aos="flip-up"></a>
+                            </details>
+                            <details>
+                                <summary class="centered">Bostaniada 2021</summary>
+
+                                <a href="../bostaniada/1.jpg" target="_blank">
+                                    <img src="../bostaniada/1.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/3.jpg" target="_blank">
+                                    <img src="../bostaniada/3.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/4.jpg" target="_blank">
+                                    <img src="../bostaniada/4.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/5.jpg" target="_blank">
+                                    <img src="../bostaniada/5.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/6.jpg" target="_blank">
+                                    <img src="../bostaniada/6.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/7.jpg" target="_blank">
+                                    <img src="../bostaniada/7.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/8.jpg" target="_blank">
+                                    <img src="../bostaniada/8.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/9.jpg" target="_blank">
+                                    <img src="../bostaniada/9.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/10.jpg" target="_blank">
+                                    <img src="../bostaniada/10.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/11.jpg" target="_blank">
+                                    <img src="../bostaniada/11.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/12prim.jpg" target="_blank">
+                                    <img src="../bostaniada/12prim.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/13.jpg" target="_blank">
+                                    <img src="../bostaniada/13.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/14.jpg" target="_blank">
+                                    <img src="../bostaniada/14.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/15.jpg" target="_blank">
+                                    <img src="../bostaniada/15.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/16.jpg" target="_blank">
+                                    <img src="../bostaniada/16.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/17.jpg" target="_blank">
+                                    <img src="../bostaniada/17.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/18.jpg" target="_blank">
+                                    <img src="../bostaniada/18.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/19.jpg" target="_blank">
+                                    <img src="../bostaniada/19.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/20.jpg" target="_blank">
+                                    <img src="../bostaniada/20.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/21.jpg" target="_blank">
+                                    <img src="../bostaniada/21.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/22.jpg" target="_blank">
+                                    <img src="../bostaniada/22.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/23.jpg" target="_blank">
+                                    <img src="../bostaniada/23.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/24.jpg" target="_blank">
+                                    <img src="../bostaniada/24.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/26.jpg" target="_blank">
+                                    <img src="../bostaniada/26.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/27.jpg" target="_blank">
+                                    <img src="../bostaniada/27.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/28.jpg" target="_blank">
+                                    <img src="../bostaniada/28.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/29.jpg" target="_blank">
+                                    <img src="../bostaniada/29.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/30.jpg" target="_blank">
+                                    <img src="../bostaniada/30.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/31.jpg" target="_blank">
+                                    <img src="../bostaniada/31.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/32.jpg" target="_blank">
+                                    <img src="../bostaniada/32.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/33.jpg" target="_blank">
+                                    <img src="../bostaniada/33.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/34.jpg" target="_blank">
+                                    <img src="../bostaniada/34.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/35.jpg" target="_blank">
+                                    <img src="../bostaniada/35.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/36.jpg" target="_blank">
+                                    <img src="../bostaniada/36.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/37.jpg" target="_blank">
+                                    <img src="../bostaniada/37.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/38.jpg" target="_blank">
+                                    <img src="../bostaniada/38.jpg" data-aos="flip-up"></a>
+                                <a href="../bostaniada/39.jpg" target="_blank">
+                                    <img src="../bostaniada/39.jpg" data-aos="flip-up"></a>
+                            </details>
+                            <details>
+                                <summary class="centered">Alături de Tekwill</summary>
+
+                                <a href="../images/premiitek.jpg" target="_blank">
+                                    <a href="../images/locul2.jpg" target="_blank">
+                                        <img src="../images/locul2.jpg" data-aos="flip-up"></a>
+                                    <img src="../images/premiitek.jpg" data-aos="flip-up"></a>
+                                <a href="../images/premiantitek.jpg" target="_blank">
+                                    <img src="../images/premiantitek.jpg" data-aos="flip-up"></a>
+                                <a href="../images/rezulttek.jpg" target="_blank">
+                                    <img src="../images/rezulttek.jpg" data-aos="flip-up"></a>
+                                <a href="../images/profiinovi.jpg" target="_blank">
+                                    <img src="../images/profiinovi.jpg" data-aos="flip-up"></a>
+                                <a href="../images/profinov.jpg" target="_blank">
+                                    <img src="../images/profinov.jpg" data-aos="flip-up"></a>
+
+                                <a href="../images/labortek.jpg" target="_blank">
+                                    <img src="../images/labortek.jpg" data-aos="flip-up"></a>
+                                <a href="../images/trofeutek.jpg" target="_blank">
+                                    <img src="../images/trofeutek.jpg" data-aos="flip-up"></a>
+                            </details>
+                            <details>
+                                <summary class="centered"> Alte activități</summary>
+
+                                <a href="../images/crs.jpg" target="_blank">
+                                    <img src="../images/crs.jpg" data-aos="flip-up"></a>
+                                <a href="../images/crs1.jpg" target="_blank">
+                                    <img src="../images/crs1.jpg" data-aos="flip-up"></a>
+                                <a href="../images/elevi.jpg" target="_blank">
+                                    <img src="../images/elevi.jpg" data-aos="flip-up"></a>
+                                <a href="../images/competitie.jpg" target="_blank">
+                                    <img src="../images/competitie.jpg" data-aos="flip-up"></a>
+                            </details>
+
+                            <details>
+                                <summary class="centered">Târgul de toamnă</summary>
+                                <a href="../images/eu.jpg" target="_blank">
+                                    <img src="../images/eu.jpg" data-aos="flip-up"></a>
+                                <a href="../images/dovleci.jpg" target="_blank">
+                                    <img src="../images/dovleci.jpg" data-aos="flip-up"></a>
+                                <a href="../images/targ5.jpg" target="_blank">
+                                    <img src="../images/targ5.jpg" data-aos="flip-up"></a>
+                                <a href="../images/targ2.jpg" target="_blank">
+                                    <img src="../images/targ2.jpg" data-aos="flip-up"></a>
+                                <a href="../images/targ3.jpg" target="_blank">
+                                    <img src="../images/targ3.jpg" data-aos="flip-up"></a>
+                                <a href="../images/targ4.jpg" target="_blank">
+                                    <img src="../images/targ4.jpg" data-aos="flip-up"></a>
+                                <a href="../images/targ.jpg" target="_blank">
+                                    <img src="../images/targ.jpg" data-aos="flip-up"></a>
+                            </details>
+
+                            <details>
+                                <summary class="centered">Aniversare 45 ani ai LT</summary>
+                                <a href="../images/tighineanu.jpg" target="_blank">
+                                    <img src="../images/tighineanu.jpg" data-aos="flip-up"></a>
+                                <a href="../images/concurs.jpg" target="_blank">
+                                    <img src="../images/concurs.jpg" data-aos="flip-up"></a>
+                                <a href="../images/talentprof.jpg" target="_blank">
+                                    <img src="../images/talentprof.jpg" data-aos="flip-up"></a>
+                                <a href="../images/ansamblu.jpg" target="_blank">
+                                    <img src="../images/ansamblu.jpg" data-aos="flip-up"></a>
+                                <a href="../images/aniversare.jpg" target="_blank">
+                                    <img src="../images/aniversare.jpg" data-aos="flip-up"></a>
+                                <a href="../images/aniv.jpg" target="_blank">
+                                    <img src="../images/aniv.jpg" data-aos="flip-up"></a>
+                                <a href="../images/colectivul.jpg" target="_blank">
+                                    <img src="../images/colectivul.jpg" data-aos="flip-up"></a>
+                                <a href="../images/Margarita.jpg" target="_blank">
+                                    <img src="../images/Margarita.jpg" data-aos="flip-up"></a>
+                                <a href="../images/sef.jpg" target="_blank">
+                                    <img src="../images/sef.jpg" data-aos="flip-up"></a>
+                            </details>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-50 video">
+                                <iframe width="460" height="300" src="https://www.youtube.com/embed/zX7mj5sP_-c"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+
+                            </div>
+                            <div class="col-50 video">
+                                <iframe width="460" height="300" src="https://www.youtube.com/embed/E3ckEvSUI2o"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+
+                            </div>
+
+                            <div class="col-50 video">
+                                <iframe width="460" height="300" src="https://www.youtube.com/embed/yJHSv8wKX40"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+
+                            </div>
+                            <div class="col-50 video">
+                                <iframe width="460" height="300" src="https://www.youtube.com/embed/UeYksSnbUHo"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+
+                            <div class="col-50 video">
+                                <iframe width="460" height="300" src="https://www.youtube.com/embed/_JQ5bk3VFbA"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="col-50 video">
+                                <iframe width="460" height="300" src="https://www.youtube.com/embed/ZRK0FXYLCOQ"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+                            <div class="col-50 video">
+                                <iframe width="460" height="300" src="https://www.youtube.com/embed/r0vm21ZVjDE"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                            </div>
+
+                        </div>
         </section>
+
+
+    </main>
+    <footer>
+
+        <div class="title-footer" id="data">
+            <i>LT Miron Costin </br> ®Toate drepturile de autor sunt înregistrate</i>
+        </div>
+        <div class="centered">
+            <a href=" https://www.facebook.com/moscalu.tafiana" targed="_blank">
+                <img src="../images/facebook.png" />
+            </a>
+
+        </div>
+    </footer>
     </main>
 
-    <footer>
-        &copy; Clubul tău de Hobby 2024
-    </footer>
-
+    <script src="../js/script.js"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-H7JT1V26H0"></script>
     <script>
-        function toggleMenu() {
-            const navLinks = document.getElementById('nav-links');
-            navLinks.classList.toggle('menu-open');
-        }
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'G-H7JT1V26H0');
     </script>
 </body>
 

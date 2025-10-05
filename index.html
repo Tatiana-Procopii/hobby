@@ -1,58 +1,513 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="shortcut icon" href="images/hobby4.png" type="image/x-icon">
-    <title>Acasă</title>
+    <title>LT "Miron Costin" Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Liceul Teoretic Miron Costin Floresti, Instituția și-a început activitatea în anul 1974
+    cu statut de școală rusă moldovenească, iar în 2006 a fost reorganizat în Liceu Teoretic cu predare în
+    limba română, instituție care cuprinde două trepte de învățământ secundar: învățământ gimnazial,
+    clasele a V-a și a IX-a, elevi de vârstă cuprinsă între 10-11 și 15-16 ani și învățământ liceal,
+    clasle X-XII, elevi de vârsta 15-16 și 17-18 ani.
+    The public institution Theoretical High School Miron Costin, Florești is a non-profit state secondary
+     education institution. The institution started its activity in 1974 with the status of a General
+    School, and in 2006 it was reorganized in a theoretical high school comprising two stages of
+    secondary education: secondary education, 5th and 9th grades, pupils aged 10-11 and 15-16 years and
+    high school education, classes X-XII, pupils aged 15-16 and 17-18 years.">
+    <meta name="keywords"
+        content="Liceul Miron Costin, miron costin, miron costin floresti, profesori buni, elevi dotati, cei mai buni profesori din, liceu dotat, performante, floresti liceu, Miron Costin">
+    <meta name="author" content="Procopii Tatiana">
+    <meta property="og:title" content="https://mironcostin.md/" />
+    <meta property="og:description" content="Liceul Teoretic Miron Costin Floresti, Instituția și-a început activitatea în anul 1974
+    cu statut de școală rusă moldovenească, iar în 2006 a fost reorganizat în Liceu Teoretic cu predare în
+    limba română, instituție care cuprinde două trepte de învățământ secundar: învățământ gimnazial,
+    clasele a V-a și a IX-a, elevi de vârstă cuprinsă între 10-11 și 15-16 ani și învățământ liceal,
+    clasle X-XII, elevi de vârsta 15-16 și 17-18 ani.
+    The public institution Theoretical High School Miron Costin, Florești is a non-profit state secondary
+     education institution. The institution started its activity in 1974 with the status of a General
+    School, and in 2006 it was reorganized in a theoretical high school comprising two stages of
+    secondary education: secondary education, 5th and 9th grades, pupils aged 10-11 and 15-16 years and
+    high school education, classes X-XII, pupils aged 15-16 and 17-18 years." />
+    <meta property="og:image" content="file:///C:/Users/user/Pictures/Desktop/ProcopiiTatiana/images/logoDichii.png" />
+    <link rel="icon" href="images/logoDichii.png" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/lightbox.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/lightbox.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+
 </head>
 
 <body>
-    <header>
-      <a href="index.html"> <img src="images/hobby4.png" alt="Icon" class="nav-icon"></a> 
-        <nav>
-            <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
-            <div id="nav-links">
-                <a href="index.html">Acasă</a>
-                <a href="pages/beneficii.html">Beneficii</a>
-                <a href="pages/tutoriale.html">Tutoriale</a>
-                <a href="pages/galerie.html">Galerie</a>
-                <a href="pages/contacte.html">Contacte</a>
-            </div>
-        </nav>
-    </header>
+    <div id="menu-btn" onclick="menu()">
+        <i id="hamburger" class="fas fa-bars"></i>
+        <i id="close" class="fas fa-times hidden"></i>
 
-    <main>
-        <h1 class="center-title">Bine ați venit!</h1>
-        <section class="index-section overlay">
+    </div>
 
-            <div class="text-container">
+    <navbar id="side-menu">
+        <div id="menu-logo">
+            <i class="fas fa-graduation-cap"></i>
 
-                <p> Hobby-urile pot aduce bucurie și satisfacție în viața noastră. <br> Inspiră-te și explorează noi
-                    pasiuni!
-                    Dezvoltăți abilitățile! <br>
-                    Învăță să transformi timpul liber în activități pline de sens!</p>
+        </div>
+        <a href="#despre" onclick="menu()">Despre noi</a>
+        <a href="#orar" onclick="menu()">Orar</a>
+        <a href="pages/noutati.html" onclick="menu()">Noutăți</a>
+        <a href="pages/acte.html" onclick="menu()">Acte normative</a>
+        <a href="pages/transparenta.html" onclick="menu()">Transparența decizională</a>
+        <a href="#merite" onclick="menu()">Merite</a>
+        <a href="pages/galerie.html" onclick="menu()">Galerie</a>
+        <a href="#contacte" onclick="menu()">Contacte</a>
+        <!-- <a href="pages/formular.html" onclick="menu()">Formular pentru Absolvenți</a> -->
 
-                <!-- Buton Descoperă -->
-                <div class="button-container">
-                    <a href="pages/beneficii.html" class="btn-descopera">Descoperă</a>
-                </div>
+    </navbar>
+
+    <main id="main">
+        <section id="intro">
+            <div id="intro-content">
+                <h1 data-aos="zoom-in"> Instituția Publică Liceul Teoretic "Miron Costin" <img class="logo-intro"
+                        src="images/logoDichii.png"></h1>
+                <a data-aos="zoom-in" data-aos-delay="500" href="#despre">Află mai mult</a>
+
             </div>
         </section>
+
+        <section id="despre">
+            <div class="centered" data-aos="fade-up">
+                <h1>Despre noi</h1>
+                <p>
+                    <abbr title="Instituția Publică Liceul Teoretic Miron Costin Floresti">IP LTMC</abbr> este o
+                    instituție de învățământ secundar
+                    general de stat, <i>apolitică, nonprofitabilă</i>. Instituția și-a început activitatea în anul 1974
+                    cu
+                    statut de școală rusă moldovenească, iar în 2006 a fost reorganizat în liceu teoretic cu predare în
+                    limba română, instituție care cuprinde două trepte de învățământ secundar: învățământ gimnazial,
+                    clasele a V-a și a IX-a, elevi de vârstă cuprinsă între 10-11 și 15-16 ani și învățământ liceal,
+                    clasle X-XII, elevi de vârsta 15-16 și 17-18 ani.<br />
+
+                    Liceul activează în conformitate cu <i>Codul Educației al RM, respectând Planul Cadru elaborat de
+                        MECC</i>
+                    asigurând o pregătire teoretică. În treapta liceală elevii pot selecta unul din cele <b>două
+                        profile:</b>
+                    <i>real sau uman</i> în conformitate cu necesitățile și aptitudinile fiecăruia. În afară de
+                    disciplinele de
+                    bază elevii au oportunitatea de a selecta câte o <em>oră opțională </em> care sunt predate de
+                    profesorii de
+                    bază. <br />
+                    În fiecare an diversificăm <i>oferta educațională opțională </i>pentru a răspunde necesităților
+                    elevilor și a cuprinde toți copiii și fiecare elev să își dezvolte potențialul la maxim. În topul
+                    preferințelor elevilor sunt orele opționale privind <b> dezvoltarea abilităților IT, abilităților de
+                        întreprinzător, celor de traducere și comunicare în limbi străine</b> și toate disciplinele în
+                    cadrul
+                    cărora pot să își exprime liber punctul de vedere și să discute asupra diferitor subiecte de interes
+                    pentru ei. Cele mai solicitate ore opționale în ultimii doi ani studii sunt: <b><i>Robotica,
+                            Proiectarea
+                            și Dezvoltarea Paginilor Web; Design Grafic; Programarea Algoritmilor în C / C ++, Educație
+                            antreprenorială, Educație pentru Media, chimia și explorarea mediului, educație ecologică,
+                            Educație
+                            prin film.</i></b> <br />
+                    O inovație pentru liceul nostru este pilotarea programului de <i> Socializare juridică în
+                        școli și cercul STEAM și criminalistică. Competențele de comunicare sunt dezvoltate în cadrul
+                        lecțiilor de limbi străine: Limba engleză, franceză, rusă, germană.</i> O parte importantă a
+                    procesului
+                    educațional o constituie activitatea extracurriculară, elevilor li se propune o gamă largă de
+                    cercuri vocaționale și secții sportive:<i>dramaturgie, arta plastică, muzică, arta vorbirii, șah,
+                        volei, fotbal, baschet, tenis de masă, dans sportiv, dans popular.</i>
+                </p>
+                <q>Nu îmi învăț niciodată elevii; tot ce fac este să le creez condițiile <br>
+                    pentru ca ei să învețe.
+                </q>
+                <br />
+                <p> <abbr title="Instituția Publică Liceul Teoretic Miron Costin Floresti">IP LTMC</abbr> The public
+                    institution Theoretical High School Miron Costin, Florești is a non-profit state secondary
+                    education institution. The institution started its activity in 1974 with the status of a General
+                    School, and in 2006 it was reorganized in a theoretical high school comprising two stages of
+                    secondary education: secondary education, 5th and 9th grades, pupils aged 10-11 and 15-16 years and
+                    high school education, classes X-XII, pupils aged 15-16 and 17-18 years.</br>
+
+                    The high school operates following <i>the Education Code of the Republic of Moldova </i>, under the
+                    Framework Plan developed by the Moldovan Ministry of Education, Culture and Research providing
+                    theoretical training.
+
+                    In the high school level, students can select one of <b>two profiles</b>: <i>Science or
+                        Humanities</i> according
+                    to their needs and skills. In addition to the basic subjects, students have the opportunity to
+                    select an optional class that is taught by the basic teachers. <br>
+                    Each year we diversify the optional educational offer to meet the needs of students and include all
+                    children and each student to develop
+                    their potential to the fullest. Among the students' preferences are the optional classes on the
+                    development of IT skills, entrepreneurial skills, translation and communication skills in foreign
+                    languages and all subjects in which they can freely express their point of view and discuss
+                    different topics of interest to them. The most requested optional hours in the last two years are
+                    <b>Robotics, Design and Web Page Development; Graphic Design; Programming Algorithms in C/C++,
+                        Entrepreneurial Education, Media Education, Chemistry and Environmental Exploration, Ecological
+                        Education, Film Education.</b>
+                    Innovation for our high school is the piloting of the <i>Legal Socialization program in schools and
+                        the
+                        STEAM and criminology</i>. Communication skills are developed during the foreign language
+                    courses:
+                    <i> English, French, Russian, German</i>.
+                    An important part of the educational process are the extracurricular activities. Students are
+                    offered a wide range of vocational activities and sports sections: <i>dramaturgy, fine arts, music,
+                        speech art, chess, volleyball, football, basketball, table tennis, sports & folk dance</i>.
+
+                </p>
+
+                <div class="cards">
+                    <div class="card" data-aos="flip-left" data-aos-delay="300">
+                        <i class="far fa-check-circle"></i>
+                        <h3>Calitate</h3>
+                    </div>
+
+                    <div class="card" data-aos="flip-left" data-aos-delay="600">
+                        <i class="fas fa-book"></i>
+                        <h3>Dedicație</h3>
+                    </div>
+
+                    <div class="card" data-aos="flip-left" data-aos-delay="900">
+                        <i class="fas fa-user-tie"></i>
+                        <h3>Profesionalism</h3>
+                    </div>
+
+                    <div class="card" data-aos="flip-left" data-aos-delay="1200">
+                        <i class="fas fa-shield-alt"></i>
+                        <h3>Siguranță</h3>
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="merite">
+            <div class="centered" data-aos="fade-up">
+                <h1>Merite</h1>
+                <i id="trofeu" class="fas fa-trophy" data-aos="flip-left" data-aos-delay="500"></i>
+                <p>
+                    Elevii liceului participă activ în fiecare an la festivaluri raionale, concursuri, competiţii
+                    sportive, olimpiade raionale, republicane și intenaționale, obţinând de fiecare dată locuri
+                    premiante. De exemplu
+                    mențiuni de la Olimpiada Republicană la istorie, biologie și limba franceză și engleză, participări
+                    la diverse concursuri raionale, republicane și internaționale.
+                </p>
+                <div class="merit">
+                    <i class="fas fa-medal medalie"></i>
+                    Concurs internațional de Aplicații Mobile -Koreea de Sud<i> ”E-icon World Contest ” - locul 3, 2022</i>
+                </div>
+                <div class="merit">
+                    <i class="fas fa-medal medalie"></i>
+                    Tekwill Junior Ambassadors <i> Aplicații mobile - locul 1 și 2, 2022</i>
+                </div>
+                <div class="merit">
+                    <i class="fas fa-medal medalie"></i>
+                    Tekwill Junior Ambassadors <i> Proiectare și dezvoltare WEB - locul 1, 2022</i>
+                </div>
+                <div class="merit">
+                    <i class="fas fa-medal medalie"></i>
+                    Concurs republican <i>" A chance, une chance, eine Chance" </i>, locul 3, 2023
+                </div>   <div class="merit">
+                    <i class="fas fa-medal medalie"></i>
+                    Concurs de matematică - România <i> ”Matemaniada”</i> locul 2, 2023
+                </div>
+
+
+                <div class="merit">
+                    <i class="fas fa-medal medalie"></i>
+                    Proiect național <i>" ,,Lecturi Spirituale” </i>, diplomă de Excelență
+                </div>
+                <div class="merit">
+                    <i class="fas fa-medal medalie"></i>
+                    Participant în programul <i>"Tekwill în fiecare școală" </i>
+                </div>
+
+                <div class="merit">
+                    <i class="fas fa-medal medalie"></i>
+                    Concurs raional  <i>Călătorie prin țările lumii - Portugalia </i>, locul 1
+                </div>
+             
+
+              
+                <div class="slideshow">
+                    <div class="slide">
+                        <div class="nr-slide"> 1/4 </div>
+                        <img src="images6/Diploma.jpg">
+                    </div>
+                    <div class="slide">
+                        <div class="nr-slide"> 2/4 </div>
+                        <img src="images6/1.jpg">
+                    </div>
+                    <div class="slide">
+                        <div class="nr-slide"> 3/4 </div>
+                        <img src="images/elevi.jpg">
+                    </div>
+                    <div class="slide">
+                        <div class="nr-slide"> 4/4 </div>
+                        <img src="images/competitie.jpg">
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+       
+
+        <section id="orar">
+            <h1 class="centered">Orarul lecțiilor 2025-2026</h1>
+            <!-- <div class="acordeon">
+                <input type="checkbox" id="clasa">
+                <label for="clasa"><i class="fas fa-caret-down"></i>Orarul sunetelor</label>
+
+                <div class="content">
+                    <a href="orar/orar.jpg">
+                        <div class="clasa"></div>
+                        <img src="orar/orar.jpg" />
+                    </a>
+
+                </div>
+            </div> -->
+            <div class="acordeon">
+                <input type="checkbox" id="clasa-5">
+                <label for="clasa-5"><i class="fas fa-caret-down"></i>Clasa V</label>
+
+                <div class="content">
+                    <a href="orar/5a.jpg">
+                        <div class="clasa"> 5A</div>
+                        <img src="orar/5a.jpg" />
+                    </a>
+                    <a href="orar/5b.jpg">
+                        <div class="clasa"> 5B</div>
+                        <img src="orar/5b.jpg" />
+                    </a>
+                    <a href="orar/5c.jpg">
+                        <div class="clasa"> 5C</div>
+                        <img src="orar/5c.jpg" />
+                    </a>
+                     <a href="orar/5d.jpg">
+                        <div class="clasa"> 5C</div>
+                        <img src="orar/5d.jpg" />
+                    </a>
+                </div>
+            </div>
+            <div class="acordeon">
+                <input type="checkbox" id="clasa-6">
+                <label for="clasa-6"><i class="fas fa-caret-down"></i>Clasa VI</label>
+
+                <div class="content">
+                    <a href="orar/6a.jpg">
+                        <div class="clasa"> 6A</div>
+                        <img src="orar/6a.jpg" />
+                    </a>
+                    <a href="orar/6b.jpg">
+                        <div class="clasa"> 6B</div>
+                        <img src="orar/6b.jpg" />
+                    </a>
+                    <a href="orar/6c.jpg">
+                        <div class="clasa"> 6C</div>
+                        <img src="orar/6c.jpg" />
+                    </a>
+                </div>
+            </div>
+            <div class="acordeon">
+                <input type="checkbox" id="clasa-7">
+                <label for="clasa-7"><i class="fas fa-caret-down"></i>Clasa VII</label>
+
+                <div class="content">
+                    <a href="orar/7a.jpg">
+                        <div class="clasa"> 7A</div>
+                        <img src="orar/7a.jpg" />
+                    </a>
+                    <a href="orar/7b.jpg">
+                        <div class="clasa"> 7B</div>
+                        <img src="orar/7b.jpg" />
+                    </a>
+                    <a href="orar/7c.jpg">
+                        <div class="clasa"> 7C</div>
+                        <img src="orar/7c.jpg" />
+                    </a>
+
+                </div>
+            </div>
+            <div class="acordeon">
+                <input type="checkbox" id="clasa-8">
+                <label for="clasa-8"><i class="fas fa-caret-down"></i>Clasa VIII</label>
+
+                <div class="content">
+                    <a href="orar/8a.jpg">
+                        <div class="clasa"> 8A</div>
+                        <img src="orar/8a.jpg" />
+                    </a>
+                    <a href="orar/8b.jpg">
+                        <div class="clasa"> 8B</div>
+                        <img src="orar/8b.jpg" />
+                    </a>
+                    <a href="orar/8c.jpg">
+                        <div class="clasa"> 8C</div>
+                        <img src="orar/8c.jpg" />
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="acordeon">
+                <input type="checkbox" id="clasa-9">
+                <label for="clasa-9"><i class="fas fa-caret-down"></i>Clasa IX</label>
+
+                <div class="content">
+                    <a href="orar/9a.jpg">
+                        <div class="clasa"> 9A</div>
+                        <img src="orar/9a.jpg" />
+                    </a>
+                    <a href="orar/9b.jpg">
+                        <div class="clasa"> 9B</div>
+                        <img src="orar/9b.jpg" />
+                    </a>
+                    <a href="orar/9c.jpg">
+                        <div class="clasa"> 9C</div>
+                        <img src="orar/9c.jpg" />
+                    </a>
+
+                </div>
+            </div>
+            <div class="acordeon">
+                <input type="checkbox" id="clasa-10">
+                <label for="clasa-10"><i class="fas fa-caret-down"></i>Clasa X</label>
+
+                <div class="content">
+                    <a href="orar/10a.jpg">
+                        <div class="clasa"> 10 A</div>
+                        <img src="orar/10a.jpg" />
+                    </a>
+                    <a href="orar/10b.jpg">
+                        <div class="clasa"> 10 B</div>
+                        <img src="orar/10b.jpg" />
+                    </a>
+                    <a href="orar/10c.jpg">
+                        <div class="clasa"> 10 C</div>
+                        <img src="orar/10c.jpg" />
+                    </a>
+                </div>
+
+            </div>
+            <div class="acordeon">
+                <input type="checkbox" id="clasa-11">
+                <label for="clasa-11"><i class="fas fa-caret-down"></i>Clasa XI</label>
+
+                <div class="content">
+                    <a href="orar/11a.jpg">
+                        <div class="clasa"> 11 A</div>
+                        <img src="orar/11a.jpg" />
+                    </a>
+                    <a href="orar/11b.jpg">
+                        <div class="clasa"> 11 B</div>
+                        <img src="orar/11b.jpg" />
+                    </a>
+                    <a href="orar/11c.jpg">
+                        <div class="clasa"> 11 C</div>
+                        <img src="orar/11c.jpg" />
+                    </a>
+                </div>
+            </div>
+            <div class="acordeon">
+                <input type="checkbox" id="clasa-12">
+                <label for="clasa-12"><i class="fas fa-caret-down"></i>Clasa
+                    XII</label>
+
+                <div class="content">
+                    <a href="orar/12a.jpg">
+                        <div class="clasa"> 12 A</div>
+                        <img src="orar/12a.jpg" />
+                    </a>
+                    <a href="orar/12b.jpg">
+                        <div class="clasa"> 12 B</div>
+                        <img src="orar/12b.jpg" />
+                    </a>
+                    <a href="orar/12c.jpg">
+                        <div class="clasa"> 12 C</div>
+                        <img src="orar/12c.jpg" />
+                    </a>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contacte">
+
+            <div class="row">
+                <div class="col-50">
+                    <h1 class="centered"> Contacte</h1>
+                    <div>
+                        <b><i class="fas fa-phone-square"></i> Telefon/Telephone:</b>
+                        <span> <a class="email" href="tel:+37325021271">+37325021271 </a> </span>
+                    </div>
+                    <div>
+                        <b><i class="fas fa-atlas"></i> Adresa/ Addresse: </b>
+                        <span>Ion Creangă 3, Florești</span>
+                    </div>
+                    <div>
+                        <b><i class="fas fa-envelope-square"></i> E-mail: </b>
+                        <span> <a class="email" href="mailto:liceulmiron.costin@gmail.com">liceulmiron.costin@gmail.com</a> </span>
+                    </div>
+                    <div class="formular-container">
+                        <form id="formular">
+                            <h3>Lasă mesaj</h3>
+                            <input type="text" id="nume" placeholder="Nume" required>
+                            <br />
+                            <input type="text" id="email" placeholder="Email" required>
+                            <br />
+                            <textarea id="mesaj" rows="4" placeholder="Mesaj" required></textarea>
+                            <br />
+                            <input onclick="send()" type="button" id="transmite" value="Transmite">
+                        </form>
+
+                    </div>
+
+                </div>
+
+                <div class="col-50">
+                    <h1 class="centered">Ne aflăm aici</h1>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10700.505263035471!2d28.2919621!3d47.8952404!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x7800cdc29ea4e3fe!2sLiceul%20Teoretic%20%22Miron%20Costin%22!5e0!3m2!1sro!2s!4v1620835078213!5m2!1sro!2s"
+                        width="100%" height="480" style="border: 0; border-radius: 10px;" allowfullscreen="" loading="lazy"></iframe>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer>
+
+            <div class="title-footer" id="data">
+
+            </div>
+            <div class="centered">
+                <a href=" https://www.facebook.com/moscalu.tafiana" targed="_blank">
+                    <img src="images/facebook.png" />
+                </a>
+
+            </div>
+        </footer>
     </main>
 
-    <footer>
-        &copy; Clubul tău de Hobby 2024
-    </footer>
+    <script src="js/script.js"></script>
 
-    <script>
-        function toggleMenu() {
-            const navLinks = document.getElementById('nav-links');
-            navLinks.classList.toggle('menu-open');
-        }
-    </script>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-H7JT1V26H0"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-H7JT1V26H0');
+</script>
 </body>
 
 </html>
